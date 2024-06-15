@@ -2,7 +2,7 @@ class CustomHeader extends HTMLElement {
     connectedCallback() {
 
         // get html content from the file 
-        fetch('/header.html')
+        fetch('/header/header.html')
             .then(response => response.text()) // convert the page to text 
             .then(data => {
                 this.innerHTML = data; // insert the fetched text to this page
