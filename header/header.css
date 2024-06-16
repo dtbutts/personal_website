@@ -38,7 +38,7 @@ body {
 }
 
 .image-item {
-    display: inline-block;
+    display: inline-flex;
     width: 24px;
     /* Icon width */
     height: 24px;
@@ -49,7 +49,7 @@ body {
 }
 
 .image-item:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 .svg-mask {
@@ -67,7 +67,7 @@ body {
 }
 
 .image-item:hover .svg-mask {
-    background-color: var(--svg-hover-color, #bc5ee1);
+    background-color: var(--svg-hover-color, #c982e5);
     /* Hover fill color */
 }
 
@@ -95,7 +95,7 @@ body {
 .menu-item {
     margin-left: 20px;
     font-size: 18px;
-    transition: transform 0.2s ease, color 0.2s ease;
+    transition: transform 0.15s ease, color 0.15s ease;
     /* Add transition effects */
 }
 
@@ -114,6 +114,6 @@ body {
 }
 
 .menu-link:hover {
-    color: #bc5ee1;
+    color: #c982e5;
     /* Change color on hover */
 }
