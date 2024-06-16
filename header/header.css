@@ -1,20 +1,84 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    padding-top: 50px;
+    /* Space for the fixed header */
 }
 
 .header {
-    background-color: #9b37c3;
-    /* Discord's color */
-    color: #fff;
+    background-color: rgb(47, 47, 47);
+    color: #ffffff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    /* Prevent the logo container from shrinking */
 }
 
 .logo {
     font-size: 24px;
+    margin-right: 20px;
+    /* Space between logo and social icons */
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.image-item {
+    display: inline-block;
+    width: 24px;
+    /* Icon width */
+    height: 24px;
+    /* Icon height */
+    margin-left: 10px;
+    /* Space between icons */
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+    transform: scale(1.01);
+}
+
+.svg-mask {
+    width: 100%;
+    height: 100%;
+    background-color: var(--svg-fill-color, #ffffff);
+    /* Default fill color */
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.image-item:hover .svg-mask {
+    background-color: var(--svg-hover-color, #bc5ee1);
+    /* Hover fill color */
+}
+
+.linkedin-icon {
+    mask: url('/assets/images/linkedin.svg') no-repeat center / contain;
+    -webkit-mask: url('/assets/images/linkedin.svg') no-repeat center / contain;
+}
+
+.github-icon {
+    mask: url('/assets/images/github-mark/github-mark.svg') no-repeat center / contain;
+    -webkit-mask: url('/assets/images/github-mark/github-mark.svg') no-repeat center / contain;
 }
 
 .header-menu {
@@ -22,19 +86,34 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-grow: 1;
+    /* Allows the menu to take up remaining space */
+    justify-content: flex-end;
+    /* Align menu items to the right */
 }
 
 .menu-item {
     margin-left: 20px;
     font-size: 18px;
+    transition: transform 0.2s ease, color 0.2s ease;
+    /* Add transition effects */
 }
 
 .menu-link {
     text-decoration: none;
-    /* Remove underline */
     color: inherit;
-    /* Inherit color from parent (assuming it's white) */
+    /* Inherit color from parent (default white) */
     cursor: pointer;
-    /* Change cursor to pointer on hover */
-    /* Add any other styles to match the appearance of other menu items */
+    transition: color 0.3s ease;
+    /* Add color transition */
+}
+
+.menu-item:hover {
+    transform: scale(1.01);
+    /* Slightly enlarge on hover */
+}
+
+.menu-link:hover {
+    color: #bc5ee1;
+    /* Change color on hover */
 }

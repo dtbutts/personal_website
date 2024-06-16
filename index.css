@@ -1,1 +1,6 @@
 @import url('/header/header.css');
+
+:root {
+    background-color: rgb(47, 47, 47);
+    color: #ffffff;
+}
