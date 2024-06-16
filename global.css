@@ -1,0 +1,30 @@
+:root {
+    /* main colors */
+    --primaryFirst: #40daf9;
+    --primarySecond: #29A1D8;
+    --primaryThird: #4b8fc7fe;
+
+    /* accent colors */
+    --accentFirst: #a943d5;
+    --accentSecond: #ce78cb;
+    --accentThird: #dfa2db;
+
+    /* Text colors */
+    --lightText: #ebebeb;
+    --mediumText: #a1a1a1;
+    --darkText: #3f3f3f;
+
+    /* basics */
+    --white: #ffffff;
+    --black: #000000;
+    --backgroundOne: #252527d9;
+    --backgroundTwo: #18181a;
+
+    /* font sizes */
+    --tinyFont: 11px;
+    --smallFont: 15px;
+    --mediumFont: 21px;
+    --bigFont: 28px;
+    --hugeFont: 50px;
+
+}

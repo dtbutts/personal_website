@@ -1,15 +1,60 @@
 @import url('/header/header.css');
+@import url('/global.css');
 
 body {
     margin: 0;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    background-color: rgb(63, 63, 63);
+    background: linear-gradient(to bottom, var(--backgroundOne), var(--backgroundTwo));
     color: #ffffff;
     overflow: hidden;
+    padding-left: 200px;
+    padding-right: 200px;
     /* Prevent scrolling */
+}
+
+.description-container {
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.monkey-photo {
+    flex: 1;
+    display: flex;
+    /* Make .monkey-photo a flex container */
+    align-items: center;
+    /* Center vertically */
+    justify-content: start;
+    /* Center horizontally */
+}
+
+.name-description {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: var(--hugeFont);
+    margin-bottom: 50px;
+}
+
+.job-description {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    justify-content: start;
+    font-size: var(--bigFont);
+    margin-bottom: 50px;
+}
+
+.summary-description {
+    display: flex;
+    align-items: start;
+    margin-left: 15px;
+    justify-content: center;
+    font-size: var(--mediumFont);
 }
 
 #glow {
