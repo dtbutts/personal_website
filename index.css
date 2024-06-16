@@ -1,6 +1,31 @@
 @import url('/header/header.css');
 
-:root {
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(63, 63, 63);
     color: #ffffff;
+    overflow: hidden;
+    /* Prevent scrolling */
+}
+
+#glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    /* Ensure the overlay doesn't block mouse events */
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    /* Ensure it's above other content */
+    background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 80%);
+    /* Adjust opacity and gradient as needed */
+    transition: opacity 0.1s ease-out, transform 0.1s ease-out;
+    /* Smooth transitions */
+    opacity: 0;
+    /* Start hidden */
 }
