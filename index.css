@@ -36,6 +36,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: start;
+    font-family: var(--standardFont);
+    font-optical-sizing: auto;
     font-size: var(--hugeFont);
     margin-bottom: 50px;
 }
@@ -43,18 +45,18 @@ body {
 .job-description {
     display: flex;
     align-items: center;
-    margin-left: 15px;
     justify-content: start;
     font-size: var(--bigFont);
+    font-family: var(--standardFont);
     margin-bottom: 50px;
 }
 
 .summary-description {
     display: flex;
     align-items: start;
-    margin-left: 15px;
     justify-content: center;
     font-size: var(--mediumFont);
+    font-family: var(--standardFont);
 }
 
 #glow {
