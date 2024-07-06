@@ -85,6 +85,11 @@ body {
     -webkit-mask: url('/assets/images/github-mark/github-mark.svg') no-repeat center / contain;
 }
 
+.instagram-icon {
+    mask: url('/assets/images/Instagram_Glyph_White.svg') no-repeat center / contain;
+    -webkit-mask: url('/assets/images/Instagram_Glyph_White.svg') no-repeat center / contain;
+}
+
 .header-menu {
     list-style-type: none;
     margin: 0;
