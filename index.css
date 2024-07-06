@@ -2,18 +2,25 @@
 @import url('/global.css');
 
 body {
-    margin: 0;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: linear-gradient(to bottom, var(--backgroundOne), var(--backgroundTwo));
     color: #ffffff;
     overflow: hidden;
     padding-left: 200px;
     padding-right: 200px;
-    /* Prevent scrolling */
+    margin: 0;
 }
+
+main {
+    height: calc(100% - 60px);
+    /* Calculate height minus top padding */
+    display: flex;
+    flex-direction: row;
+    /* Change to column for vertical alignment */
+    align-items: center;
+    justify-content: center;
+    /* Optional: Center content vertically */
+}
+
 
 .description-container {
     flex: 2;
@@ -55,7 +62,7 @@ body {
     display: flex;
     align-items: start;
     justify-content: center;
-    font-size: var(--mediumFont);
+    font-size: var(--smallFont);
     font-family: var(--standardFont);
 }
 
