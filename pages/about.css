@@ -16,3 +16,15 @@ main {
     padding-top: 60px;
     height: calc(100% - 60px);
 }
+
+.page-title {}
+
+.headshot-image {}
+
+.about-description {}
+
+.side-by-side {
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+}
