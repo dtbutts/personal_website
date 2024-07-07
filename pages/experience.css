@@ -2,17 +2,136 @@
 @import url('/header/header.css');
 @import url('/global.css');
 
-
 body {
     height: 100vh;
-    color: #ffffff;
-    overflow: hidden;
-    padding-left: 200px;
-    padding-right: 200px;
+    color: #000000;
+    padding-left: 300px;
+    padding-right: 300px;
     margin: 0;
 }
 
 main {
-    padding-top: 60px;
     height: calc(100% - 60px);
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resume-button {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: var(--accentSecond);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.time-column {
+    flex: 20%;
+}
+
+.button-icon {
+    margin-left: 5px;
+}
+
+.job-title {
+    margin-bottom: 20px;
+}
+
+.custom-date {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--primaryFirst);
+}
+
+.experience-column {
+    height: 100%;
+    flex: 80%;
+}
+
+.experience-column-1 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 20px 20px;
+    background-image: linear-gradient(to right, rgb(12, 12, 12), rgb(34, 33, 33));
+    border: none;
+    color: white;
+    padding: 20px;
+}
+
+.work-description {
+    position: relative;
+    padding-left: 30px;
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.work-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('/assets/images/doubleArrow.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.inline-highlight {
+    color: var(--accentThird);
+    font-weight: bold;
+}
+
+.side-by-side {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 30px;
+    padding: 20px;
+    /* border-radius: 20px 20px 20px 20px;
+    background-image: linear-gradient(to right, rgb(21, 19, 19), rgb(34, 33, 33));
+    border: none; */
+}
+
+.time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.time-container,
+.time-container,
+.time-container {
+    margin: 4px;
+}
+
+.time-container .horizontal-line {
+    height: 1px;
+    width: 13px;
+    background-color: var(--primaryFirst);
+}
+
+.time-container .vertical-line {
+    width: 1px;
+    margin-left: 1px;
+    background-color: var(--primaryFirst);
+    flex: 1;
+    align-self: center;
 }

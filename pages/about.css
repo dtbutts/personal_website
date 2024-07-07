@@ -17,14 +17,14 @@ main {
     height: calc(100% - 60px);
 }
 
-.page-title {}
+.headshot-image {
+    border-radius: 20px 20px 20px 20px;
 
-.headshot-image {}
+}
 
 .about-description {}
 
 .side-by-side {
     display: flex;
     flex-direction: row;
-    background-color: pink;
 }
