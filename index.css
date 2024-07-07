@@ -14,11 +14,20 @@ main {
     height: calc(100% - 60px);
     /* Calculate height minus top padding */
     display: flex;
-    flex-direction: row;
-    /* Change to column for vertical alignment */
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    /* Optional: Center content vertically */
+}
+
+.name {
+    margin: 0;
+}
+
+
+
+.sideways {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 
@@ -46,14 +55,14 @@ main {
     font-family: var(--standardFont);
     font-optical-sizing: auto;
     font-size: var(--hugeFont);
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
 
 .job-description {
     display: flex;
     align-items: center;
     justify-content: start;
-    font-size: var(--bigFont);
+    font-size: 22px;
     font-family: var(--standardFont);
     margin-bottom: 50px;
     color: var(--mediumText);
@@ -84,4 +93,26 @@ main {
     /* Smooth transitions */
     opacity: 0;
     /* Start hidden */
+}
+
+.discordButton {
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 200px;
+    padding: 15px 15px;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: var(--accentSecond);
+    margin-top: 60px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.discordButton:hover {
+    background-color: #c643c2;
+    transform: scale(1.01);
 }

@@ -4,7 +4,7 @@
 
 body {
     height: 100vh;
-    color: #000000;
+    /* color: #000000; */
     padding-left: 300px;
     padding-right: 300px;
     margin: 0;
@@ -54,7 +54,7 @@ h2 {
     margin-bottom: 8px;
     font-style: italic;
     font-size: 14px;
-    color: var(--primaryFirst);
+    color: var(--mediumText);
 }
 
 .experience-column {
@@ -66,7 +66,7 @@ h2 {
     display: flex;
     flex-direction: column;
     border-radius: 20px 20px 20px 20px;
-    background-image: linear-gradient(to right, rgb(12, 12, 12), rgb(34, 33, 33));
+    background-image: linear-gradient(to right, rgb(22, 22, 22), rgb(34, 33, 33));
     border: none;
     color: white;
     padding: 20px;
@@ -125,13 +125,13 @@ h2 {
 .time-container .horizontal-line {
     height: 1px;
     width: 13px;
-    background-color: var(--primaryFirst);
+    background-color: var(--mediumText);
 }
 
 .time-container .vertical-line {
     width: 1px;
     margin-left: 1px;
-    background-color: var(--primaryFirst);
+    background-color: var(--mediumText);
     flex: 1;
     align-self: center;
 }
