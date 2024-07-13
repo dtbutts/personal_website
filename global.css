@@ -22,7 +22,7 @@ body {
 .page-title {
     font-size: var(--biggerFont);
     color: var(--mediumText);
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 :root {

@@ -34,6 +34,13 @@ h2 {
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.resume-button:hover {
+    background-color: #c643c2;
+    transform: scale(1.01);
 }
 
 .time-column {
@@ -101,7 +108,7 @@ h2 {
     display: flex;
     align-items: stretch;
     margin-bottom: 30px;
-    padding: 20px;
+    padding: 10px;
     /* border-radius: 20px 20px 20px 20px;
     background-image: linear-gradient(to right, rgb(21, 19, 19), rgb(34, 33, 33));
     border: none; */
