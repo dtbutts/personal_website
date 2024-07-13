@@ -20,9 +20,15 @@ main {
 
 .name {
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: var(--standardFont);
+    font-optical-sizing: auto;
+    font-size: var(--hugeFont);
+    color: var(--lightText);
+    margin-bottom: 0px;
 }
-
-
 
 .sideways {
     display: flex;
@@ -41,37 +47,26 @@ main {
 .monkey-photo {
     flex: 1;
     display: flex;
-    /* Make .monkey-photo a flex container */
-    align-items: center;
-    /* Center vertically */
-    justify-content: start;
-    /* Center horizontally */
-}
-
-.name-description {
-    display: flex;
     align-items: center;
     justify-content: start;
-    font-family: var(--standardFont);
-    font-optical-sizing: auto;
-    font-size: var(--hugeFont);
-    margin-bottom: 5px;
+    height: 290px;
 }
 
 .job-description {
     display: flex;
     align-items: center;
     justify-content: start;
-    font-size: 22px;
+    font-size: 26px;
+    font-style: italic;
     font-family: var(--standardFont);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: var(--mediumText);
 }
 
 .summary-description {
     display: flex;
     align-items: start;
-    justify-content: center;
+    justify-content: start;
     font-size: var(--smallFont);
     font-family: var(--standardFont);
     color: var(--mediumText);
