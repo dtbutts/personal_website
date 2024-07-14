@@ -21,7 +21,7 @@ body {
 
 .page-title {
     font-size: var(--biggerFont);
-    color: var(--mediumText);
+    color: white;
     padding-bottom: 5px;
 }
 
@@ -35,10 +35,11 @@ body {
     --accentFirst: #a943d5;
     --accentSecond: #ce78cb;
     --accentThird: #dfa2db;
+    --myPurple: #8c84c9;
 
     /* Text colors */
     --lightText: #ebebeb;
-    --mediumText: #cac2b7;
+    --mediumText: #c3bec5;
     --darkText: #aca092;
 
     /* basics */
