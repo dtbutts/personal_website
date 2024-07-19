@@ -1,5 +1,4 @@
 /* Import the header styling into this file */
-@import url('/header/header.css');
 @import url('/global.css');
 
 
@@ -30,6 +29,7 @@ main {
 }
 
 .project-title {
+    margin: 0;
     text-align: left;
     color: white;
     font-size: 32px;
@@ -79,11 +79,51 @@ main {
     margin-right: 10px;
 }
 
+.technology-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('/assets/images/doubleArrowLight.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
 
-a {
-    color: var(--accentFirst);
+.technology-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    /* Adjust the gap as needed */
+}
+
+.technology-description {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 30px;
+    color: var(--mediumText);
     font-size: 16px;
-    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.not-maintained {
+    margin: 0;
+    font-size: 20px;
+    color: rgb(209, 63, 63);
+}
+
+.project-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-repo {
+    color: var(--accentSecond);
+    font-size: 16px;
+    margin-left: 20px;
 }
 
 .image {
