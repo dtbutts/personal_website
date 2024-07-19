@@ -17,6 +17,8 @@ main {
 h2 {
     margin: 0;
     margin-bottom: 10px;
+    font-size: 32px;
+    color: var(--primaryThird)
 }
 
 .header-container {
@@ -53,9 +55,9 @@ h2 {
 }
 
 .job-title {
-    margin-bottom: 20px;
-    color: var(--mediumText);
-
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
 }
 
 p {
@@ -66,7 +68,7 @@ p {
     margin-top: 8px;
     margin-bottom: 8px;
     font-style: italic;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--mediumText);
 }
 
@@ -90,7 +92,7 @@ p {
     position: relative;
     padding-left: 30px;
     color: var(--mediumText);
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 5px;
     margin-bottom: 5px;
 }

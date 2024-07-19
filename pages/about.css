@@ -34,7 +34,7 @@ main {
     padding-left: 5px;
     padding-right: 5px;
     display: flex;
-    font-size: var(--mediumFont);
+    font-size: 16px;
     font-family: var(--standardFont);
     color: var(--mediumText);
     max-width: 3450px;
