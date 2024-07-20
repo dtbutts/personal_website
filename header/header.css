@@ -21,11 +21,16 @@
     /* Prevent the logo container from shrinking */
 }
 
-.logo {
-    font-size: 24px;
+.logo-container {
     margin-right: 20px;
-    /* Space between logo and social icons */
 }
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+
 
 .social-icons {
     display: flex;
