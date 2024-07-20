@@ -31,7 +31,6 @@ main {
 .project-title {
     margin: 0;
     text-align: left;
-    color: white;
     font-size: 32px;
     color: var(--primaryThird);
     margin-bottom: 20px;
