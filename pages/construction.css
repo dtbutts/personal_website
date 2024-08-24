@@ -1,0 +1,36 @@
+/* Import the header styling into this file */
+@import url('/global.css');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.coming-soon-text {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    font-size: var(--mediumFont);
+    font-family: var(--standardFont);
+    color: var(--mediumText);
+    max-width: 3450px;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 290px;
+}
