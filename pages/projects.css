@@ -126,11 +126,19 @@ main {
 }
 
 .image {
-    flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* or specify a fixed height if needed */
 }
+
+.jokeshere {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+
 
 .image img {
     max-width: 100%;
