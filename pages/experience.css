@@ -21,7 +21,7 @@ h2 {
     color: var(--primaryThird)
 }
 
-a {
+.site-anchor {
     color: var(--accentSecond);
     font-size: 16px;
     margin-left: 20px;
