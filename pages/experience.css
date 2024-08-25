@@ -21,6 +21,12 @@ h2 {
     color: var(--primaryThird)
 }
 
+a {
+    color: var(--accentSecond);
+    font-size: 16px;
+    margin-left: 20px;
+}
+
 .header-container {
     display: flex;
     align-items: center;
