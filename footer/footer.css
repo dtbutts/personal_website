@@ -53,36 +53,45 @@
     margin-left: 10px;
 }
 
+.ticker-tape-container {
+    overflow-x: hidden;
+    display: flex;
+}
+
 .ticker-tape {
-    position: relative;
-    width: 100%;
-    height: 25px;
-    overflow: hidden;
     display: flex;
     align-items: center;
-}
-
-.ticker-text {
-    display: flex;
-    white-space: nowrap;
-    color: white;
-    font-size: 16px;
+    flex: 0 0 auto;
+    gap: 8rem;
     text-transform: uppercase;
-    animation: scroll-left 25s linear infinite;
+    white-space: nowrap;
+    animation-name: marquee;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: normal;
 }
 
-.ticker-line {
-    display: inline-block;
-    margin-right: 100px;
-    /* Adjust spacing as needed */
-}
-
-@keyframes scroll-left {
+@keyframes marquee {
     0% {
-        transform: translateX(0);
+        /* Adjust this when it you add sentences!!!!! */
+        transform: translateX(3%);
     }
 
     100% {
         transform: translateX(-100%);
     }
+}
+
+.ticker-tape {
+    animation-name: marquee;
+    /* Adjust this when it you add sentences!!!!! */
+    animation-duration: 250s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: normal;
 }
