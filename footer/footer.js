@@ -22,7 +22,6 @@ class CustomFooter extends HTMLElement {
                 "Noah Cyrus > Miley Cyrus",
                 "Punks not dead!",
                 "The App Store (2021) generated $85.1B while Google Play generated only $47.9B across more apps - develop for the app store first",
-                "In heaven there is no beer, that\'s why we drink it here"
             ];
 
             // Shuffle and create three copies
