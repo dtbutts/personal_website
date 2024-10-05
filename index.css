@@ -1,94 +1,110 @@
 @import url('/header/header.css');
+@import url('/footer/footer.css');
 @import url('/global.css');
 
-body {
-    height: 100vh;
-    color: #ffffff;
-    overflow: hidden;
-    padding-left: 200px;
-    padding-right: 200px;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-main {
-    height: calc(100% - 60px);
-    /* Calculate height minus top padding */
+body,
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: red;
+}
+
+body {
+    /* Remove this unless there's a fixed header */
+    padding-top: 60px;
+}
+
+.landing-image {
+    height: calc(100vh - 95px);
+    background-image: url('assets/images/calvinHobbs.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.name {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    font-family: var(--standardFont);
-    font-optical-sizing: auto;
-    font-size: var(--hugeFont);
-    color: var(--lightText);
-    margin-bottom: 0px;
-}
-
-.sideways {
-    display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
+.overlay h1 {
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+    text-align: center;
+}
 
-.description-container {
-    flex: 2;
+.content {
+    background-color: green;
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 25px;
+}
+
+.column {
+    padding: 20px;
+}
+
+.left-column {
+    background-color: purple;
+    width: 20%;
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 80px);
+    overflow: auto;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: start;
 }
 
-.monkey-photo {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    height: 290px;
+.scroll-link {
+    color: white;
+    /* Change to your preferred color */
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    /* Adjust padding as needed */
+    display: block;
+    /* Makes the entire area clickable */
 }
 
-.job-description {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    font-size: 26px;
-    font-style: italic;
-    font-family: var(--standardFont);
-    margin-bottom: 30px;
-    color: var(--mediumText);
+.scroll-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Optional hover effect */
 }
 
-.summary-description {
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    font-size: var(--smallFont);
-    font-family: var(--standardFont);
-    color: var(--mediumText);
+
+.right-column {
+    background-color: yellow;
+    width: 80%;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
 }
 
-#glow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    /* Ensure the overlay doesn't block mouse events */
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    /* Ensure it's above other content */
-    background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 80%);
-    /* Adjust opacity and gradient as needed */
-    transition: opacity 0.1s ease-out, transform 0.1s ease-out;
-    /* Smooth transitions */
-    opacity: 0;
-    /* Start hidden */
+.right-column::-webkit-scrollbar {
+    display: none;
 }
+
 
 .discordButton {
     border: none;
@@ -107,7 +123,39 @@ main {
     transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
-.discordButton:hover {
-    background-color: #c643c2;
-    transform: scale(1.01);
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2em;
+}
+
+.projects,
+.experience,
+.education,
+.about {
+    margin-bottom: 60px;
+}
+
+
+/* If mobile screens */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .left-column {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-column {
+        width: 100%;
+        max-height: none;
+    }
+
+    .monkey-photo {
+        display: none;
+    }
 }

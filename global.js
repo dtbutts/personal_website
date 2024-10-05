@@ -27,3 +27,33 @@ document.addEventListener("mouseleave", function () {
         glow.style.opacity = 0;
     }
 });
+
+function scrollToContent(sectionId) {
+    const headerOffset = 59; // The height of the header
+    const sectionElement = document.getElementById(sectionId);
+    const sectionPosition = sectionElement.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+        top: sectionPosition,
+        behavior: 'smooth'
+    });
+}
+function scrollToSection(sectionId) {
+    const headerOffset = 60; // Adjust this based on your header height
+    const sectionElement = document.getElementById(sectionId);
+
+    if (sectionElement) {
+        const rightColumn = document.querySelector('.right-column');
+        const sectionPosition = sectionElement.getBoundingClientRect().top + rightColumn.scrollTop - headerOffset - 20;
+
+        rightColumn.scrollTo({
+            top: sectionPosition,
+            behavior: 'smooth'
+        });
+    } else {
+        console.error(`Section with ID ${sectionId} not found`);
+    }
+}
+
+window.scrollToSection = scrollToSection;
+window.scrollToContent = scrollToContent;

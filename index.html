@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- To run local host:
-        php -S localhost:8080    
-    and then go to:
-        http://localhost:8080/
--->
-
 <head>
+    <!-- To run local host:
+        php -S localhost:8080    
+            and then go to:
+        http://localhost:8080/
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dawson Butts</title>
+    <title>Your fav engineer</title>
     <link rel="stylesheet" href="/index.css">
     <script type=module src=/header/header.js></script>
     <script type=module src="/footer/footer.js"></script>
+    <script type="module" src="global.js"></script>
     <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 </head>
 
@@ -22,6 +21,143 @@
 
     <!-- Link in header  -->
     <custom-header></custom-header>
+
+    <section class="landing-image" id="landing-image">
+        <div class="overlay">
+            <h1>Welcome to My Website</h1>
+            <button class="discordButton" onclick="scrollToContent('content');">
+                See Portfolio
+                <img src="/assets/images/rightarrow.svg" style="margin-left: 5px;" alt="Icon" class="button-icon">
+            </button>
+        </div>
+
+
+
+    </section>
+
+    <section class="content" id="content">
+        <div class="column left-column">
+            <div class="monkey-photo">
+                <div>
+                    <img src="/assets/images/construction_monkey.png" width="auto" height="170">
+                </div>
+            </div>
+            <div><a href="#" onclick="event.preventDefault(); scrollToSection('projects');">Projects</a></div>
+            <div><a href="#" onclick="event.preventDefault(); scrollToSection('experience');">Experience</a></div>
+            <div><a href="#" onclick="event.preventDefault(); scrollToSection('education');">Education</a></div>
+            <div><a href="#" onclick="event.preventDefault(); scrollToSection('about');">About Me</a></div>
+        </div>
+
+
+        <div class="column right-column">
+            <section class="projects" id="projects">
+                <h2>Some things I've built...</h2>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+            </section>
+            <section class="experience" id="experience">
+                <h2>Some places I've worked...</h2>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+            </section>
+            <section class="education" id="education">
+                <h2>Where I've learned...</h2>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+            </section>
+            <section class="about" id="about">
+                <h2>More about me...</h2>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                    ante.
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+            </section>
+        </div>
+    </section>
+
+
+    <custom-footer></custom-footer>
+
+    <div id="glow"></div>
+</body>
+
+</html>
+
+
+<!-- 
+
+Old main 
+
 
     <main>
 
@@ -63,11 +199,4 @@
 
     </main>
 
-    <custom-footer></custom-footer>
-
-    <div id="glow"></div>
-
-    <script src="/global.js"></script>
-</body>
-
-</html>
+-->

@@ -1,6 +1,5 @@
 .header {
     background: linear-gradient(to right, var(--primaryThird), var(--accentSecond));
-    /* background-color: var(--primaryThird); */
     color: var(--lightText);
     padding: 10px 20px;
     display: flex;
@@ -18,7 +17,6 @@
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    /* Prevent the logo container from shrinking */
 }
 
 .logo-container {
@@ -26,11 +24,13 @@
 }
 
 .logo {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
-
+.logo:hover {
+    transform: scale(1.03);
+}
 
 .social-icons {
     display: flex;
@@ -40,25 +40,21 @@
 
 .image-item {
     display: inline-flex;
-    width: 24px;
-    /* Icon width */
-    height: 24px;
-    /* Icon height */
+    width: 26px;
+    height: 26px;
     margin-left: 10px;
     margin-right: 5px;
-    /* Space between icons */
     transition: transform 0.3s ease;
 }
 
 .image-item:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .svg-mask {
     width: 100%;
     height: 100%;
-    background-color: var(--svg-fill-color, var(--lightText));
-    /* Default fill color */
+    background-color: white;
     mask-size: contain;
     -webkit-mask-size: contain;
     mask-position: center;
@@ -69,8 +65,7 @@
 }
 
 .image-item:hover .svg-mask {
-    background-color: var(--svg-hover-color, var(--accentThird));
-    /* Hover fill color */
+    background-color: #40daf9;
 }
 
 .linkedin-icon {
@@ -88,39 +83,34 @@
     -webkit-mask: url('/assets/images/Instagram_Glyph_White.svg') no-repeat center / contain;
 }
 
+/*
 .header-menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-grow: 1;
-    /* Allows the menu to take up remaining space */
     justify-content: flex-end;
-    /* Align menu items to the right */
 }
+*/
 
-.menu-item {
+/* .menu-item {
     margin-left: 20px;
     font-size: 18px;
     transition: transform 0.15s ease, color 0.15s ease;
-    /* Add transition effects */
-}
+} */
 
-.menu-link {
+/* .menu-link {
     text-decoration: none;
     color: inherit;
-    /* Inherit color from parent (default white) */
     cursor: pointer;
     transition: color 0.3s ease;
-    /* Add color transition */
-}
+} */
 
-.menu-item:hover {
+/* .menu-item:hover {
     transform: scale(1.01);
-    /* Slightly enlarge on hover */
-}
+} */
 
-.menu-link:hover {
+/* .menu-link:hover {
     color: var(--primaryFirst);
-    /* Change color on hover */
-}
+} */

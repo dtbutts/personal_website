@@ -14,14 +14,19 @@ class CustomHeader extends HTMLElement {
     addEventListenerToLogo() {
         const logo = this.querySelector('.logo');
         if (logo) {
-            logo.addEventListener('click', this.handleLogoClick);
+            logo.addEventListener('click', this.scrollToSectionHeader);
         }
     }
 
-    // handle logo click
-    handleLogoClick(event) {
-        event.preventDefault(); // Prevent the default action if needed
-        window.location.href = '/';
+    scrollToSectionHeader(sectionId) {
+        const headerOffset = 60; // The height of the header
+        const sectionElement = document.getElementById('landing-image');
+        const sectionPosition = sectionElement.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+            top: sectionPosition,
+            behavior: 'smooth'
+        });
     }
 }
 
