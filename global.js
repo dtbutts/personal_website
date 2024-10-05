@@ -40,21 +40,44 @@ function scrollToContent(sectionId) {
 }
 
 function scrollToSection(sectionId) {
-    const headerOffset = window.innerWidth <= 768 ? 180 : 60; // Different offset for mobile
-    const sectionElement = document.getElementById(sectionId);
-    console.log("test");
-    if (sectionElement) {
-        const rightColumn = document.querySelector('.right-column');
-        const sectionPosition = sectionElement.getBoundingClientRect().top + rightColumn.scrollTop - headerOffset - 20;
+    const section = document.getElementById(sectionId);
+    if (section) {
+        const offset = window.innerWidth <= 768 ? 30 : 75;
 
-        rightColumn.scrollTo({
-            top: sectionPosition,
-            behavior: 'smooth'
-        });
-    } else {
-        console.error(`Section with ID ${sectionId} not found`);
+        // Calculate the target scroll position for the entire document
+        const sectionPosition = section.getBoundingClientRect().top + window.scrollY - offset;
+
+        if (window.innerWidth <= 768) {
+            const rightColumn = document.querySelector('.right-column');
+            const rightColumnRect = rightColumn.getBoundingClientRect();
+            const sectionTopInRightColumn = section.getBoundingClientRect().top - rightColumnRect.top + rightColumn.scrollTop;
+
+            // Check if the section is within the right column's scrollable area
+            if (sectionTopInRightColumn >= 0 && sectionTopInRightColumn <= rightColumn.scrollHeight) {
+                rightColumn.scrollTo({
+                    top: sectionTopInRightColumn - offset,
+                    behavior: 'smooth'
+                });
+            } else {
+                // Fallback to scrolling the whole window if the section is not within the right column
+                window.scrollTo({
+                    top: sectionPosition,
+                    behavior: 'smooth'
+                });
+            }
+        } else {
+            window.scrollTo({
+                top: sectionPosition,
+                behavior: 'smooth'
+            });
+        }
     }
 }
+
+
+
+
+
 
 window.scrollToSection = scrollToSection;
 window.scrollToContent = scrollToContent;
