@@ -38,10 +38,11 @@ function scrollToContent(sectionId) {
         behavior: 'smooth'
     });
 }
-function scrollToSection(sectionId) {
-    const headerOffset = 60; // Adjust this based on your header height
-    const sectionElement = document.getElementById(sectionId);
 
+function scrollToSection(sectionId) {
+    const headerOffset = window.innerWidth <= 768 ? 180 : 60; // Different offset for mobile
+    const sectionElement = document.getElementById(sectionId);
+    console.log("test");
     if (sectionElement) {
         const rightColumn = document.querySelector('.right-column');
         const sectionPosition = sectionElement.getBoundingClientRect().top + rightColumn.scrollTop - headerOffset - 20;
