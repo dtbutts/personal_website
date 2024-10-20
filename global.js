@@ -74,10 +74,13 @@ function scrollToSection(sectionId) {
     }
 }
 
+function testPrint() {
+    console.log("Cliked");
+}
 
 
 
 
-
+window.testPrint = testPrint;
 window.scrollToSection = scrollToSection;
 window.scrollToContent = scrollToContent;
