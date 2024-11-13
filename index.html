@@ -24,7 +24,8 @@
 
     <section class="landing-image" id="landing-image">
         <div class="overlay">
-            <h1>Welcome to My Website</h1>
+            <h1>Dawson Butts</h1>
+            <h2>Software Engineer</h2>
             <button class="discordButton" onclick="scrollToContent('content');">
                 See Portfolio
                 <img src="/assets/images/rightarrow.svg" style="margin-left: 5px;" alt="Icon" class="button-icon">
@@ -71,11 +72,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="types">
-                            <!-- <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);"
-                                class="project-type"></span> -->
-                            <span class="project-type">• Source Code</span>
-                        </div>
+
                     </div>
                 </article>
 
@@ -101,7 +98,9 @@
                         <div class="types">
                             <!-- <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);"
                                 class="project-type"></span> -->
-                            <span class="project-type">• Source Code</span>
+                            <span class="project-type"
+                                onclick="event.stopPropagation(); goTo('dawsonbutts.com/pages/experience.html');">•
+                                Source Code</span>
                         </div>
                     </div>
                 </article>
@@ -457,7 +456,7 @@
                         </div>
                     </div>
                     <div class="experience-column">
-                        <div class="experience-column-1">
+                        <div class="experience-column-1" data-date-range="Jan 2023 - Present">
 
                             <div class="header-container">
                                 <h2>Wood's Powr-Grip</h2>
@@ -579,7 +578,7 @@
                         </div>
                     </div>
                     <div class="experience-column">
-                        <div class="experience-column-1">
+                        <div class="experience-column-1" data-date-range="Jan 2022 - Apr 2022">
 
                             <div class="header-container">
                                 <h2>Altitude Chophouse and Brewery</h2>
@@ -631,7 +630,7 @@
                         </div>
                     </div>
                     <div class="experience-column">
-                        <div class="experience-column-1">
+                        <div class="experience-column-1" data-date-range="May 2021 - Aug 2021">
 
                             <div class="header-container">
                                 <h2>Happy Jack Software</h2>
@@ -680,7 +679,7 @@
                         </div>
                     </div>
                     <div class="experience-column">
-                        <div class="experience-column-1">
+                        <div class="experience-column-1" data-date-range="Jun 2017 - Aug 2018">
 
                             <div class="header-container">
                                 <h2>TYVO Inc.</h2>
@@ -714,49 +713,73 @@
 
             <section class="education" id="education">
                 <h2>Where I've learned...</h2>
-                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada
-                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
-                    ante.
-                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
-                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada
-                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
-                    ante.
-                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
-                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada
-                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
-                    ante.
-                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
-                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada
-                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
-                    ante.
-                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <div style="text-align: center;">
+                    <img src="assets/images/wyo_banner.png"
+                        style="width: 100%; max-width: 600px; border-radius: 15px;" />
+                </div>
+                <br>
+                <!-- <h3>University of Wyoming</h3> -->
+                <br>
+
+                <div style="display: flex; justify-content: space-between; gap: 20px; height: 120px;">
+
+                    <div style="flex: 1; text-align: left; min-width: 150px; max-width: 270px; flex-basis: 33%; 
+                    display: flex; flex-direction: column; justify-content: center; border: 1px solid ; 
+                    border-radius: 10px;
+                    background: rgb(29, 40, 46); padding: 16px 16px 16px 12px;">
+
+                        <p style="font-size: small; margin: 0; color: rgb(207, 207, 207);">Years:</p>
+                        <div style="display: flex; align-items: center; justify-content: center; flex-grow: 1;">
+                            <p
+                                style="font-size: 26px; color: white; text-align: center; margin: 0; word-wrap: break-word; padding: 10px;">
+                                2018-2022</p>
+                        </div>
+                    </div>
+
+
+                    <div style="flex: 1; text-align: left; min-width: 150px; max-width: 270px; flex-basis: 33%; 
+                        display: flex; flex-direction: column; justify-content: center; border: 1px solid ; 
+                        border-radius: 10px;
+                        background: rgb(29, 40, 46); padding: 16px 16px 16px 12px;">
+                        <p style="font-size: small; margin: 0; color: rgb(207, 207, 207);">GPA:</p>
+                        <div style="display: flex; align-items: center; justify-content: center; flex-grow: 1;">
+                            <p
+                                style="font-size: 26px; color: white; text-align: center; margin: 0; word-wrap: break-word; padding: 10px;">
+                                4.0</p>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1; text-align: left; min-width: 150px; max-width: 270px; flex-basis: 33%; 
+                        display: flex; flex-direction: column; justify-content: center; border: 1px solid ; 
+                        border-radius: 10px;
+                        background: rgb(29, 40, 46); padding: 16px 16px 16px 12px;">
+                        <p style="font-size: small; margin: 0; color: rgb(190, 189, 189);">Study:</p>
+                        <div style="display: flex; align-items: center; justify-content: center; flex-grow: 1;">
+                            <p
+                                style="font-size: 26px; color: white; text-align: center; margin: 0; word-wrap: break-word; padding: 10px;">
+                                B.S. Computer Science</p>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <h3>Recognition from this time</h3>
+                <p>University of Wyoming Trustees Scholarship Recipient</p>
+                <p>President's Honor Roll</p>
+                <p>Honor Book Award Upon Graduation</p>
+                <p>I recieved "0 to 1" ( upon request) and and software development for ios??</p>
             </section>
             <section class="about" id="about">
                 <h2>More about me...</h2>
-                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada
-                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
-                    ante.
-                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
-                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada
-                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
-                    ante.
-                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
-                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada
-                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
-                    ante.
-                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
-                <p>Your scrollable content goes here. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada
-                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
-                    ante.
-                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+                <p>I am a software engineer that enjoys creating.
+                    After taking an intro programming course on a whim, I found an interest in technology and began my
+                    journey into software.
+                    Today, I work for Wood's Powr-Grip in Billings, MT and in my spare time work, play, and create.
+                </p>
+                <br>
+                <p>
+
+                </p>
             </section>
         </div>
     </section>

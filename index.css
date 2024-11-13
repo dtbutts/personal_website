@@ -407,6 +407,8 @@ body {
 }
 
 
+
+/* Default styles for larger screens */
 .custom-date {
     margin-top: 8px;
     margin-bottom: 8px;
@@ -492,4 +494,28 @@ body {
     background-color: black;
     flex: 1;
     align-self: center;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+    /* Hide the time-column */
+    .time-column {
+        display: none;
+    }
+
+    /* Show custom-date at the top of each experience item */
+    .experience-column .experience-column-1 {
+        position: relative;
+    }
+
+    .experience-column .experience-column-1::before {
+        content: attr(data-date-range);
+        display: block;
+        font-size: 14px;
+        font-style: italic;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }

@@ -78,9 +78,14 @@ function testPrint() {
     console.log("Cliked");
 }
 
+function goTo(input) {
+    e.stopPropogation();
+    window.location.href = input;
+}
 
 
 
+window.goTo = goTo;
 window.testPrint = testPrint;
 window.scrollToSection = scrollToSection;
 window.scrollToContent = scrollToContent;
