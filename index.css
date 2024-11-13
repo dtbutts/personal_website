@@ -11,8 +11,7 @@
 body,
 html {
     height: 100%;
-    font-family: Arial, sans-serif;
-    /* background-color: red; */
+    font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
     overscroll-behavior: none;
 }
 
@@ -20,7 +19,45 @@ body {
     padding-top: 60px;
 }
 
-.landing-image {
+h1 {
+    font-size: 40px;
+}
+
+
+h1:not(.no-underline),
+h2:not(.no-underline),
+h3:not(.no-underline) {
+
+    display: inline-block;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    padding-right: 20px;
+}
+
+p:not(.no-indent) {
+    padding-left: 10px;
+}
+
+#landing-image {
+    width: 100%;
+}
+
+.banner-container {
+    width: 100%;
+    height: 350px;
+    /* You can adjust this height as needed */
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* This ensures the image covers the container while maintaining aspect ratio */
+}
+
+
+/* .landing-image {
     height: calc(100vh - 95px);
     background-image: url('assets/images/calvinHobbs.jpg');
     background-size: cover;
@@ -29,9 +66,9 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-}
+} */
 
-.overlay {
+/* .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,7 +84,7 @@ body {
     color: rgb(0, 0, 0);
     font-size: 3em;
     text-align: center;
-}
+} */
 
 .content {
     /* background-color: green; */
@@ -176,7 +213,8 @@ body {
 
 /* From Uiverse.io by Amine-maker */
 .article-wrapper {
-    width: auto;
+    max-width: 675px;
+    /* Or any width you want - try different values like 400px, 500px etc */
     -webkit-transition: 0.15s all ease-in-out;
     transition: 0.15s all ease-in-out;
     border-radius: 10px;

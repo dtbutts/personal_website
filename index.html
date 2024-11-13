@@ -22,18 +22,22 @@
     <!-- Link in header  -->
     <custom-header></custom-header>
 
-    <section class="landing-image" id="landing-image">
-        <div class="overlay">
+
+    <!-- <section class="landing-image" id="landing-image"> -->
+    <!-- <div class="overlay">
             <h1>Dawson Butts</h1>
             <h2>Software Engineer</h2>
             <button class="discordButton" onclick="scrollToContent('content');">
                 See Portfolio
                 <img src="/assets/images/rightarrow.svg" style="margin-left: 5px;" alt="Icon" class="button-icon">
             </button>
+        </div> -->
+
+
+    <section id="landing-image">
+        <div class="banner-container">
+            <img src="/assets/images/space_banner.jpg" alt="Banner image" class="banner-image">
         </div>
-
-
-
     </section>
 
     <section class="content" id="content">
@@ -51,118 +55,129 @@
 
 
         <div class="column right-column">
+            <h1>Hi, my name is Dawson.</h1>
+            <p>Discover amazing experiences and opportunities with us. We're dedicated to providing exceptional service
+                and
+                innovative solutions for all your needs.
+            </p>
+
+            <br>
+            <br>
+
             <section class="projects" id="projects">
                 <h2>Some things I've built...</h2>
 
+                <div style="padding-left: 10px;">
 
-                <!-- Page Turner Watch app -->
-                <article class="article-wrapper">
-                    <div class="rounded-lg container-project">
-                        <img class="project-pic" src="assets/images/bandGroup.JPG">
-                    </div>
-                    <div class="project-info">
-                        <div class="flex-pr">
-                            <div class="project-title text-nowrap">PageTurner</div>
-                            <div class="project-hover">
-                                <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
-                                    color="black" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24"
-                                    stroke-width="2" fill="none" stroke="currentColor">
-                                    <line y2="12" x2="19" y1="12" x1="5"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </div>
+
+                    <!-- Page Turner Watch app -->
+                    <article class="article-wrapper">
+                        <div class="rounded-lg container-project">
+                            <img class="project-pic" src="assets/images/bandGroup.JPG">
                         </div>
-
-                    </div>
-                </article>
-
-                <br>
-                <br>
-
-                <article class="article-wrapper" onclick="testPrint()">
-                    <div class="rounded-lg container-project">
-                        <img class="project-pic" src="assets/images/bandGroup.JPG">
-                    </div>
-                    <div class="project-info">
-                        <div class="flex-pr">
-                            <div class="project-title text-nowrap">Roku TV Voice Control</div>
-                            <div class="project-hover">
-                                <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
-                                    color="black" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24"
-                                    stroke-width="2" fill="none" stroke="currentColor">
-                                    <line y2="12" x2="19" y1="12" x1="5"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
+                        <div class="project-info">
+                            <div class="flex-pr">
+                                <div class="project-title text-nowrap">PageTurner</div>
+                                <div class="project-hover">
+                                    <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                        height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
+                                        viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
+                                        <line y2="12" x2="19" y1="12" x1="5"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </div>
                             </div>
+
                         </div>
-                        <div class="types">
-                            <!-- <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);"
+                    </article>
+
+                    <br>
+                    <br>
+
+                    <article class="article-wrapper" onclick="testPrint()">
+                        <div class="rounded-lg container-project">
+                            <img class="project-pic" src="assets/images/bandGroup.JPG">
+                        </div>
+                        <div class="project-info">
+                            <div class="flex-pr">
+                                <div class="project-title text-nowrap">Roku TV Voice Control</div>
+                                <div class="project-hover">
+                                    <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                        height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
+                                        viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
+                                        <line y2="12" x2="19" y1="12" x1="5"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="types">
+                                <!-- <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);"
                                 class="project-type"></span> -->
-                            <span class="project-type"
-                                onclick="event.stopPropagation(); goTo('dawsonbutts.com/pages/experience.html');">•
-                                Source Code</span>
-                        </div>
-                    </div>
-                </article>
-
-                <br>
-                <br>
-
-                <article class="article-wrapper" onclick="testPrint()">
-                    <div class="rounded-lg container-project">
-                        <img class="project-pic" src="assets/images/bandGroup.JPG">
-                    </div>
-                    <div class="project-info">
-                        <div class="flex-pr">
-                            <div class="project-title text-nowrap">This Website!</div>
-                            <div class="project-hover">
-                                <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
-                                    color="black" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24"
-                                    stroke-width="2" fill="none" stroke="currentColor">
-                                    <line y2="12" x2="19" y1="12" x1="5"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
+                                <span class="project-type"
+                                    onclick="event.stopPropagation(); goTo('dawsonbutts.com/pages/experience.html');">•
+                                    Source Code</span>
                             </div>
                         </div>
-                        <div class="types">
-                            <!-- <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);"
-                                class="project-type"></span> -->
-                            <span class="project-type">• Source Code</span>
+                    </article>
+
+                    <br>
+                    <br>
+
+                    <article class="article-wrapper" onclick="testPrint()">
+                        <div class="rounded-lg container-project">
+                            <img class="project-pic" src="assets/images/bandGroup.JPG">
                         </div>
-                    </div>
-                </article>
-
-                <br>
-                <br>
-
-                <article class="article-wrapper" onclick="testPrint()">
-                    <div class="rounded-lg container-project">
-                        <img class="project-pic" src="assets/images/bandGroup.JPG">
-                    </div>
-                    <div class="project-info">
-                        <div class="flex-pr">
-                            <div class="project-title text-nowrap">QuIT</div>
-                            <div class="project-hover">
-                                <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
-                                    color="black" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24"
-                                    stroke-width="2" fill="none" stroke="currentColor">
-                                    <line y2="12" x2="19" y1="12" x1="5"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
+                        <div class="project-info">
+                            <div class="flex-pr">
+                                <div class="project-title text-nowrap">This Website!</div>
+                                <div class="project-hover">
+                                    <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                        height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
+                                        viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
+                                        <line y2="12" x2="19" y1="12" x1="5"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="types">
+                                <!-- <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);"
+                                class="project-type"></span> -->
+                                <span class="project-type">• Source Code</span>
                             </div>
                         </div>
-                        <div class="types">
-                            <!-- <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);"
-                                class="project-type"></span> -->
-                            <span class="project-type">• Source Code</span>
+                    </article>
+
+                    <br>
+                    <br>
+
+                    <article class="article-wrapper" onclick="testPrint()">
+                        <div class="rounded-lg container-project">
+                            <img class="project-pic" src="assets/images/bandGroup.JPG">
                         </div>
-                    </div>
-                </article>
+                        <div class="project-info">
+                            <div class="flex-pr">
+                                <div class="project-title text-nowrap">QuIT</div>
+                                <div class="project-hover">
+                                    <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                        height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
+                                        viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
+                                        <line y2="12" x2="19" y1="12" x1="5"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="types">
+                                <!-- <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);"
+                                class="project-type"></span> -->
+                                <span class="project-type">• Source Code</span>
+                            </div>
+                        </div>
+                    </article>
 
-                <br>
-                <br>
+                    <br>
+                    <br>
 
-                <!--  
+                    <!--  
                 
                 <div class="card">
                     <img src="assets/images/fishing2resized.jpg">
@@ -178,7 +193,7 @@
 
                 -->
 
-                <!--  
+                    <!--  
 
                 <br>
                 <br>
@@ -440,6 +455,7 @@
 
                  -->
 
+                </div>
 
             </section>
             <section class="experience" id="experience">
@@ -459,8 +475,8 @@
                         <div class="experience-column-1" data-date-range="Jan 2023 - Present">
 
                             <div class="header-container">
-                                <h2>Wood's Powr-Grip</h2>
-                                <p style="font-weight:600;">Laurel, Montana</p>
+                                <h2 class="no-underline">Wood's Powr-Grip</h2>
+                                <p class="no-indent" style="font-weight:600;">Laurel, Montana</p>
                             </div>
                             <div class="job-title">
                                 Software Engineer
@@ -581,8 +597,8 @@
                         <div class="experience-column-1" data-date-range="Jan 2022 - Apr 2022">
 
                             <div class="header-container">
-                                <h2>Altitude Chophouse and Brewery</h2>
-                                <p style="font-weight:600;">Laramie, Wyoming</p>
+                                <h2 class="no-underline">Altitude Chophouse and Brewery</h2>
+                                <p class="no-indent" style="font-weight:600;">Laramie, Wyoming</p>
                             </div>
                             <div class="job-title">
                                 Server
@@ -633,8 +649,8 @@
                         <div class="experience-column-1" data-date-range="May 2021 - Aug 2021">
 
                             <div class="header-container">
-                                <h2>Happy Jack Software</h2>
-                                <p style="font-weight:600;">Laramie, Wyoming</p>
+                                <h2 class="no-underline">Happy Jack Software</h2>
+                                <p class="no-indent" style="font-weight:600;">Laramie, Wyoming</p>
                             </div>
                             <div class="job-title">
                                 Junior Programmer
@@ -682,8 +698,8 @@
                         <div class="experience-column-1" data-date-range="Jun 2017 - Aug 2018">
 
                             <div class="header-container">
-                                <h2>TYVO Inc.</h2>
-                                <p style="font-weight:600;">Upton, Wyoming</p>
+                                <h2 class="no-underline">TYVO Inc.</h2>
+                                <p class="no-indent" style="font-weight:600;">Upton, Wyoming</p>
                             </div>
                             <div class="job-title">
                                 Drilling Rig Hand
@@ -714,8 +730,8 @@
             <section class="education" id="education">
                 <h2>Where I've learned...</h2>
                 <div style="text-align: center;">
-                    <img src="assets/images/wyo_banner.png"
-                        style="width: 100%; max-width: 600px; border-radius: 15px;" />
+                    <img src="assets/images/wyo_banner_cropped.png"
+                        style="width: 100%; max-width: 740px; border-radius: 15px;" />
                 </div>
                 <br>
                 <!-- <h3>University of Wyoming</h3> -->
@@ -725,7 +741,7 @@
 
                     <div style="flex: 1; text-align: left; min-width: 150px; max-width: 270px; flex-basis: 33%; 
                     display: flex; flex-direction: column; justify-content: center; border: 1px solid ; 
-                    border-radius: 10px;
+                    border-radius: 7px;
                     background: rgb(29, 40, 46); padding: 16px 16px 16px 12px;">
 
                         <p style="font-size: small; margin: 0; color: rgb(207, 207, 207);">Years:</p>
@@ -739,7 +755,7 @@
 
                     <div style="flex: 1; text-align: left; min-width: 150px; max-width: 270px; flex-basis: 33%; 
                         display: flex; flex-direction: column; justify-content: center; border: 1px solid ; 
-                        border-radius: 10px;
+                        border-radius: 7px;
                         background: rgb(29, 40, 46); padding: 16px 16px 16px 12px;">
                         <p style="font-size: small; margin: 0; color: rgb(207, 207, 207);">GPA:</p>
                         <div style="display: flex; align-items: center; justify-content: center; flex-grow: 1;">
@@ -751,7 +767,7 @@
 
                     <div style="flex: 1; text-align: left; min-width: 150px; max-width: 270px; flex-basis: 33%; 
                         display: flex; flex-direction: column; justify-content: center; border: 1px solid ; 
-                        border-radius: 10px;
+                        border-radius: 7px;
                         background: rgb(29, 40, 46); padding: 16px 16px 16px 12px;">
                         <p style="font-size: small; margin: 0; color: rgb(190, 189, 189);">Study:</p>
                         <div style="display: flex; align-items: center; justify-content: center; flex-grow: 1;">
@@ -761,6 +777,65 @@
                         </div>
                     </div>
                 </div>
+
+                <br>
+                <br>
+
+
+
+                <div style="display: flex; justify-content: space-between; gap: 20px; height: 120px;">
+                    <div style="flex: 1; text-align: left; min-width: 150px; max-width: 270px; flex-basis: 33%; 
+                                display: flex; flex-direction: column; justify-content: center; 
+                                border: 1px solid rgb(52, 53, 65); 
+                                border-radius: 12px;
+                                background: rgba(255, 255, 255, 0.7);
+                                backdrop-filter: blur(10px);
+                                -webkit-backdrop-filter: blur(10px);
+                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+                                padding: 16px 16px 16px 12px;">
+                        <p style="font-size: small; margin: 0; color: rgb(52, 53, 65);">Years:</p>
+                        <div style="display: flex; align-items: center; justify-content: center; flex-grow: 1;">
+                            <p
+                                style="font-size: 26px; color: rgb(52, 53, 65); text-align: center; margin: 0; word-wrap: break-word; padding: 10px;">
+                                2018-2022</p>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1; text-align: left; min-width: 150px; max-width: 270px; flex-basis: 33%; 
+                                display: flex; flex-direction: column; justify-content: center;
+                                border: 1px solid rgb(52, 53, 65);
+                                border-radius: 12px;
+                                background: rgba(255, 255, 255, 0.7);
+                                backdrop-filter: blur(10px);
+                                -webkit-backdrop-filter: blur(10px);
+                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+                                padding: 16px 16px 16px 12px;">
+                        <p style="font-size: small; margin: 0; color: rgb(52, 53, 65);">GPA:</p>
+                        <div style="display: flex; align-items: center; justify-content: center; flex-grow: 1;">
+                            <p
+                                style="font-size: 26px; color: rgb(52, 53, 65); text-align: center; margin: 0; word-wrap: break-word; padding: 10px;">
+                                4.0</p>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1; text-align: left; min-width: 150px; max-width: 270px; flex-basis: 33%; 
+                                display: flex; flex-direction: column; justify-content: center;
+                                border: 1px solid rgb(52, 53, 65);
+                                border-radius: 12px;
+                                background: rgba(231, 231, 231, 0.7);
+                                backdrop-filter: blur(10px);
+                                -webkit-backdrop-filter: blur(10px);
+                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+                                padding: 16px 16px 16px 12px;">
+                        <p style="font-size: small; margin: 0; color: rgb(52, 53, 65);">Study:</p>
+                        <div style="display: flex; align-items: center; justify-content: center; flex-grow: 1;">
+                            <p
+                                style="font-size: 26px; color: rgb(52, 53, 65); text-align: center; margin: 0; word-wrap: break-word; padding: 10px;">
+                                B.S. Computer Science</p>
+                        </div>
+                    </div>
+                </div>
+
 
                 <br>
                 <h3>Recognition from this time</h3>
