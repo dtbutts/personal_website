@@ -79,7 +79,7 @@ function testPrint() {
 }
 
 function goTo(input) {
-    e.stopPropogation();
+    // e.stopPropogation();
     window.location.href = input;
 }
 
@@ -89,3 +89,21 @@ window.goTo = goTo;
 window.testPrint = testPrint;
 window.scrollToSection = scrollToSection;
 window.scrollToContent = scrollToContent;
+
+
+// cycle GIF images 
+const images = [
+    'assets/images/construction_monkey.png',
+    'assets/images/band.jpg',
+    'assets/images/emailIcon.svg',
+];
+
+let currentIndex = 0;
+
+function changeImage() {
+    const slideshow = document.getElementById('slideshow');
+    currentIndex = (currentIndex + 1) % images.length;
+    slideshow.src = images[currentIndex];
+}
+
+setInterval(changeImage, 1000); // Change image every 5 seconds

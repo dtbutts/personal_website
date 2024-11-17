@@ -23,6 +23,14 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
 
 h1:not(.no-underline),
 h2:not(.no-underline),
@@ -40,51 +48,22 @@ p:not(.no-indent) {
 
 #landing-image {
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .banner-container {
     width: 100%;
-    height: 350px;
-    /* You can adjust this height as needed */
-    overflow: hidden;
+    height: 300px;
+    position: relative;
+    z-index: 1;
 }
 
 .banner-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* This ensures the image covers the container while maintaining aspect ratio */
 }
-
-
-/* .landing-image {
-    height: calc(100vh - 95px);
-    background-image: url('assets/images/calvinHobbs.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-} */
-
-/* .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.overlay h1 {
-    color: rgb(0, 0, 0);
-    font-size: 3em;
-    text-align: center;
-} */
 
 .content {
     /* background-color: green; */
@@ -94,6 +73,9 @@ p:not(.no-indent) {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 0px;
+    z-index: 0;
+    margin-top: 100px;
+    position: relative;
 }
 
 .column {
@@ -181,6 +163,28 @@ p:not(.no-indent) {
 
 /* If mobile screens */
 @media (max-width: 768px) {
+
+    .uni-stats {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 400px;
+        align-items: center;
+    }
+
+    /* Adjust the child divs to take full width and stack vertically */
+    .uni-stats>div {
+        flex-basis: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .top-blurb {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
     .content {
         flex-direction: column;
     }
@@ -556,4 +560,26 @@ p:not(.no-indent) {
         text-align: center;
         margin-bottom: 10px;
     }
+}
+
+.slideshow-wrapper {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.slideshow-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+}
+
+#slideshow {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

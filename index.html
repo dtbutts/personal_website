@@ -22,23 +22,19 @@
     <!-- Link in header  -->
     <custom-header></custom-header>
 
-
-    <!-- <section class="landing-image" id="landing-image"> -->
-    <!-- <div class="overlay">
-            <h1>Dawson Butts</h1>
-            <h2>Software Engineer</h2>
-            <button class="discordButton" onclick="scrollToContent('content');">
-                See Portfolio
-                <img src="/assets/images/rightarrow.svg" style="margin-left: 5px;" alt="Icon" class="button-icon">
-            </button>
-        </div> -->
-
-
     <section id="landing-image">
         <div class="banner-container">
-            <img src="/assets/images/space_banner.jpg" alt="Banner image" class="banner-image">
+            <img src="/assets/images/mountains.JPG" alt="Banner image" class="banner-image">
+            <div class="slideshow-wrapper">
+                <div class="slideshow-container">
+                    <img id="slideshow" src="assets/images/construction_monkey.png" alt="Slideshow Image">
+                </div>
+            </div>
         </div>
     </section>
+
+    <br>
+    <br>
 
     <section class="content" id="content">
         <div class="column left-column">
@@ -56,10 +52,22 @@
 
         <div class="column right-column">
             <h1>Hi, my name is Dawson.</h1>
-            <p>Discover amazing experiences and opportunities with us. We're dedicated to providing exceptional service
-                and
-                innovative solutions for all your needs.
-            </p>
+
+            <div class="top-blurb" style="display: flex; gap: 50px; padding-top: 20px;">
+                <div style="flex: 1;">
+                    <p>I'm a software engineer who enjoys building creative, interesting,
+                        and useful things.
+                    </p>
+                    <br>
+                    <p>
+                        I currently work in the manufacturing industry in Montana where I work on websites and mobile
+                        apps. My personal projects
+                    </p>
+                </div>
+                <div style="flex: 1;">
+                    <img style="width: 250px; height: auto;" src="assets/images/headshot.jpg" />
+                </div>
+            </div>
 
             <br>
             <br>
@@ -71,7 +79,7 @@
 
 
                     <!-- Page Turner Watch app -->
-                    <article class="article-wrapper">
+                    <article class="article-wrapper" onclick="goTo('/pages/experience.html');">
                         <div class="rounded-lg container-project">
                             <img class="project-pic" src="assets/images/bandGroup.JPG">
                         </div>
@@ -715,7 +723,8 @@
                             <div class="work-item">
                                 <div class="work-description">
                                     <span class="work-icon"></span>
-                                    Worked the rig floor, pulled trailers to transport supplies, ran machinery, and cut
+                                    Worked the rig floor, pulled trailers to transport supplies, ran machinery, and
+                                    cut
                                     and
                                     welded pipe to drill
                                     water wells for houses or ranches.
@@ -737,43 +746,40 @@
                 <!-- <h3>University of Wyoming</h3> -->
                 <br>
 
-                <div style="display: flex; justify-content: space-between; gap: 20px; height: 120px;">
-
+                <div class="uni-stats" style="display: flex; justify-content: space-between; gap: 20px; height: 140px;">
                     <div style="flex: 1; text-align: left; min-width: 150px; max-width: 270px; flex-basis: 33%; 
-                    display: flex; flex-direction: column; justify-content: center; border: 1px solid ; 
-                    border-radius: 7px;
-                    background: rgb(29, 40, 46); padding: 16px 16px 16px 12px;">
-
+                    display: flex; flex-direction: column; justify-content: center; border: 1px solid; 
+                    border-radius: 7px; background: rgb(29, 40, 46); padding: 16px 16px 16px 12px;">
                         <p style="font-size: small; margin: 0; color: rgb(207, 207, 207);">Years:</p>
                         <div style="display: flex; align-items: center; justify-content: center; flex-grow: 1;">
                             <p
                                 style="font-size: 26px; color: white; text-align: center; margin: 0; word-wrap: break-word; padding: 10px;">
-                                2018-2022</p>
+                                2018-2022
+                            </p>
                         </div>
                     </div>
 
-
                     <div style="flex: 1; text-align: left; min-width: 150px; max-width: 270px; flex-basis: 33%; 
-                        display: flex; flex-direction: column; justify-content: center; border: 1px solid ; 
-                        border-radius: 7px;
-                        background: rgb(29, 40, 46); padding: 16px 16px 16px 12px;">
+                    display: flex; flex-direction: column; justify-content: center; border: 1px solid; 
+                    border-radius: 7px; background: rgb(85, 94, 99); padding: 16px 16px 16px 12px;">
                         <p style="font-size: small; margin: 0; color: rgb(207, 207, 207);">GPA:</p>
                         <div style="display: flex; align-items: center; justify-content: center; flex-grow: 1;">
                             <p
                                 style="font-size: 26px; color: white; text-align: center; margin: 0; word-wrap: break-word; padding: 10px;">
-                                4.0</p>
+                                4.0
+                            </p>
                         </div>
                     </div>
 
                     <div style="flex: 1; text-align: left; min-width: 150px; max-width: 270px; flex-basis: 33%; 
-                        display: flex; flex-direction: column; justify-content: center; border: 1px solid ; 
-                        border-radius: 7px;
-                        background: rgb(29, 40, 46); padding: 16px 16px 16px 12px;">
+                    display: flex; flex-direction: column; justify-content: center; border: 1px solid; 
+                    border-radius: 7px; background: rgb(29, 40, 46); padding: 16px 16px 16px 12px;">
                         <p style="font-size: small; margin: 0; color: rgb(190, 189, 189);">Study:</p>
                         <div style="display: flex; align-items: center; justify-content: center; flex-grow: 1;">
                             <p
                                 style="font-size: 26px; color: white; text-align: center; margin: 0; word-wrap: break-word; padding: 10px;">
-                                B.S. Computer Science</p>
+                                B.S. Computer Science
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -781,7 +787,7 @@
                 <br>
                 <br>
 
-
+                <!-- 
 
                 <div style="display: flex; justify-content: space-between; gap: 20px; height: 120px;">
                     <div style="flex: 1; text-align: left; min-width: 150px; max-width: 270px; flex-basis: 33%; 
@@ -834,7 +840,7 @@
                                 B.S. Computer Science</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
 
                 <br>
@@ -847,7 +853,8 @@
             <section class="about" id="about">
                 <h2>More about me...</h2>
                 <p>I am a software engineer that enjoys creating.
-                    After taking an intro programming course on a whim, I found an interest in technology and began my
+                    After taking an intro programming course on a whim, I found an interest in technology and began
+                    my
                     journey into software.
                     Today, I work for Wood's Powr-Grip in Billings, MT and in my spare time work, play, and create.
                 </p>
