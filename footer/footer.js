@@ -23,6 +23,7 @@ class CustomFooter extends HTMLElement {
                 // "Punks not dead!",
                 "The App Store (2021) generated $85.1B while Google Play generated only $47.9B across more apps - develop for the app store first",
                 "Justice for Peanut 🐿️",
+                "Strive to work like Gail Lewis",
             ];
 
             // Shuffle and create three copies
