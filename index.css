@@ -238,13 +238,13 @@ p:not(.no-indent) {
     transform: translate(-20px, -20px);
 }
 
-.article-wrapper:active {
+/* .article-wrapper:active {
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
-}
+} */
 
 .types {
     gap: 10px;
@@ -314,10 +314,15 @@ p:not(.no-indent) {
     background: #b2b2fd;
     color: #1a41cd;
     font-weight: bold;
-    padding: 0.3em 0.7em;
+    padding: 0.7em 0.7em;
     border-radius: 15px;
-    font-size: 12px;
+    font-size: 18px;
     letter-spacing: -0.6px
+}
+
+.project-type:hover {
+    background: #1b1b81;
+    /* New background color when hovered */
 }
 
 .project-hover {
