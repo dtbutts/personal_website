@@ -28,6 +28,28 @@ class CustomHeader extends HTMLElement {
             behavior: 'smooth'
         });
     }
+
+    scrollToSectionHeader(sectionId) {
+        const headerOffset = 60; // The height of the header
+        const currentPage = window.location.pathname; // Get the current page URL path
+        const sectionElement = document.getElementById(sectionId); // Get the section element by ID
+
+        // Check if we're on the index.html page
+        if (currentPage === '/index.html' || currentPage === '/') {
+            const sectionElement = document.getElementById('landing-image');
+            const sectionPosition = sectionElement.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: sectionPosition,
+                behavior: 'smooth'
+            });
+        } else {
+            // If not on index.html, redirect to index.html
+            window.location.href = '/index.html'; // Redirect to index.html
+        }
+    }
+
+
 }
 
 customElements.define("custom-header", CustomHeader);

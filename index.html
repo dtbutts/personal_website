@@ -43,11 +43,17 @@
                     <img src="/assets/images/construction_monkey.png" width="auto" height="170">
                 </div>
             </div>
-            <div><a href="#" onclick="event.preventDefault(); scrollToSection('projects');">Projects</a></div>
-            <div><a href="#" onclick="event.preventDefault(); scrollToSection('experience');">Experience</a></div>
-            <div><a href="#" onclick="event.preventDefault(); scrollToSection('education');">Education</a></div>
-            <div><a href="#" onclick="event.preventDefault(); scrollToSection('about');">About Me</a></div>
+            <div class="link-wrapper" onclick="event.preventDefault(); scrollToSection('projects');"><a href="#"
+                    class="custom-link">Projects</a></div>
+            <div class="link-wrapper" onclick="event.preventDefault(); scrollToSection('experience');"><a href="#"
+                    class="custom-link">Experience</a></div>
+            <div class="link-wrapper" onclick="event.preventDefault(); scrollToSection('education');"><a href="#"
+                    class="custom-link">Education</a></div>
+            <div class="link-wrapper" onclick="event.preventDefault(); scrollToSection('about');"><a href="#"
+                    class="custom-link">About Me</a></div>
         </div>
+
+
 
 
         <div class="column right-column">
@@ -68,15 +74,14 @@
                     </p>
                     <br>
                     <p>
-                        If you like what you find here, reach out - I'm always up for new projects, collabs, and hearing
-                        ideas.
+                        If you like what you find here, reach out - I'm always up for new projects, collabs, and ideas.
                     </p>
                 </div>
                 <div style="flex: 1;">
                     <figure>
 
                         <img style="width: 250px; height: auto;" src="assets/images/ski_face.jpg">
-                        <figcaption>me doing what I love most</figcaption>
+                        <figcaption>doing what I love most</figcaption>
                         </img>
                     </figure>
 
@@ -136,7 +141,7 @@
                                 <!-- <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);"
                                 class="project-type"></span> -->
                                 <span class="project-type"
-                                    onclick="event.stopPropagation(); goTo('https://github.com/dtbutts/roku_voice_remote');">•
+                                    onclick="event.stopPropagation(); goTo('https://github.com/dtbutts/roku_voice_remote', true);">•
                                     Source Code</span>
                             </div>
                         </div>
@@ -195,7 +200,7 @@
                                 <!-- <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);"
                                 class="project-type"></span> -->
                                 <span class="project-type"
-                                    onclick="event.stopPropagation(); goTo('https://github.com/dtbutts/quIT_android_mobile');">•
+                                    onclick="event.stopPropagation(); goTo('https://github.com/dtbutts/quIT_android_mobile', true);">•
                                     Source Code</span>
                             </div>
                         </div>

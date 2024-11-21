@@ -78,9 +78,12 @@ function testPrint() {
     console.log("Cliked");
 }
 
-function goTo(input) {
-    // e.stopPropogation();
-    window.location.href = input;
+function goTo(input, openInNewWindow = false) {
+    if (openInNewWindow) {
+        window.open(input, '_blank');
+    } else {
+        window.location.href = input;
+    }
 }
 
 

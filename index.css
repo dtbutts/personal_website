@@ -98,21 +98,24 @@ p:not(.no-indent) {
 }
 
 
-.scroll-link {
-    color: white;
-    /* Change to your preferred color */
+.custom-link {
     text-decoration: none;
-    cursor: pointer;
-    padding: 10px;
-    /* Adjust padding as needed */
-    display: block;
-    /* Makes the entire area clickable */
 }
 
-.scroll-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    /* Optional hover effect */
+.link-wrapper {
+    width: 110px;
+    margin-top: 9px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    border: solid #9191db;
+    border-width: 1px 1px;
 }
+
+.link-wrapper:hover {
+    background-color: #9191db;
+}
+
 
 
 .right-column {
