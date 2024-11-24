@@ -96,9 +96,16 @@ window.scrollToContent = scrollToContent;
 
 // cycle GIF images 
 const images = [
-    'assets/images/construction_monkey.png',
-    'assets/images/band.jpg',
-    'assets/images/emailIcon.svg',
+    'assets/images/prof_1.jpg',
+    'assets/images/prof_2.jpg',
+    'assets/images/prof_3.jpg',
+    'assets/images/prof_4.jpg',
+    'assets/images/prof_1.jpg',
+    'assets/images/prof_5.jpg',
+    'assets/images/prof_7.jpg',
+    'assets/images/prof_6.jpg',
+    'assets/images/prof_8.jpg',
+
 ];
 
 let currentIndex = 0;
@@ -111,5 +118,5 @@ function changeImage() {
 
 // Check if the current page is index.html
 if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
-    setInterval(changeImage, 1000); // Change image every 1 second
+    setInterval(changeImage, 500);
 }
