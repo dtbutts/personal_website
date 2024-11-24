@@ -109,4 +109,7 @@ function changeImage() {
     slideshow.src = images[currentIndex];
 }
 
-setInterval(changeImage, 1000); // Change image every 5 seconds
+// Check if the current page is index.html
+if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
+    setInterval(changeImage, 1000); // Change image every 1 second
+}

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/index.css">
     <script type=module src=/header/header.js></script>
     <script type=module src="/footer/footer.js"></script>
-    <script type="module" src="global.js"></script>
+    <script type="module" src="/global.js"></script>
     <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 </head>
 
@@ -25,20 +25,95 @@
             <div style="padding-top: 20px;"></div>
 
             <p>
-                I noticed an issue when my friends and I played music -
-                we would always be huddled around a laptop looking at chords. Starting at a screen
-                while playing live music is the exact opposite of what a crowd comes to see. For those who
-                don't have the time to memorized a full 2 hour set of songs, how can you get the best of both
-                worlds?
+                As any good lazy slob knows, the worst part of watching tv is having to reach for the remote.
+                I tried to fix that issue by further reducing the gap from someone's thoughts to technology.
             </p>
             <br>
             <p>
-                This Apple Watch app helps an artist have the benefit of
-                seeing a chord progression while not having to look at a tablet, laptop, or sheets of music
-                during
-                their performance. Simply turn your Apple Watch to the inside of your wrist and peek when you
-                need to.
+                This Python script allows you to control your Roku TV completely by voice by listening for keywords.
+                There are the obvous "pause", "play", "left", etc., but also some
+
+
             </p>
+            <br>
+            <p>
+                Sorry - <span style="font-weight: bold; color: rgb(255, 102, 0);">repository is private</span> - I
+                think
+                this app has
+                legs.
+            </p>
+            <br>
+            <br>
+            <h2>Demo</h2>
+            <br>
+            <div class="video" style="text-align: left; box-sizing: border-box; max-width: 100%; padding-left: 5px;">
+                <video controls style="width: 100%; max-width: 700px; padding-bottom: 20px; box-sizing: border-box;">
+                    <source src="/assets/video/pageTurnerDemo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <br>
+            <br>
+
+            <h2>Built Using...</h2>
+
+            <div class="technology-grouping">
+                <div class="types">
+                    <span class="technology-type-lang">• Swift</span>
+                </div>
+                <div class="types">
+                    <span class="technology-type-framework">• WatchOS UI Kit</span>
+                </div>
+                <div class="types">
+                    <span class="technology-type-field">• Timers</span>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <p>
+                This project taught me a lot about how to develop UI for very limited space. I had some idea of a
+                limited interface from general mobile development, but WatchOS UI Kit
+                doesn't even offer contraints for UI objects. This made me really focus on the design and make tough
+                decisions on what was necessary vs. what I
+                thought would look cute.
+            </p>
+            <br>
+            <p>
+                I also learned the struggle of starting and stopping timers. To keep a tempo with the music, I had to
+                manage changes with timers while still allowing
+                that tempo to be change to the artist's preference. Timers can be a headache!
+            </p>
+
+            <br>
+            <br>
+
+            <h2>What's Coming Next...</h2>
+
+            <p>
+                To make this project better, I would like to:
+            </p>
+            <br>
+            <ul>
+                <li>
+                    Create a scrolling effect rather than just having the chords change with no warning. This would help
+                    musicians keep time and prepare for incoming changes
+                    before they happen.
+                </li>
+                <li>
+                    Create a companion phone app that offers an interface for users to input songs and chords. This
+                    would remove the barrier of currently hardcoding chords for songs.
+                </li>
+                <li>
+                    Network the companion app so that users can start to create a shared database of songs that anyone
+                    can use on their watch.
+                </li>
+            </ul>
+
+            <br>
+            <br>
             <br>
 
         </div>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/index.css">
     <script type=module src=/header/header.js></script>
     <script type=module src="/footer/footer.js"></script>
-    <script type="module" src="global.js"></script>
+    <script type="module" src="/global.js"></script>
     <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 </head>
 
@@ -27,22 +27,116 @@
             <div style="padding-top: 20px;"></div>
 
             <p>
-                I noticed an issue when my friends and I played music -
-                we would always be huddled around a laptop looking at chords. Starting at a screen
-                while playing live music is the exact opposite of what a crowd comes to see. For those who
-                don't have the time to memorized a full 2 hour set of songs, how can you get the best of both
-                worlds?
+                As any good lazy slob knows, the worst part of my yearly GoT binge is having to reach for the remote to
+                skip the intro.
+                I tried to fix that issue by cutting out the button press.
+                <br>
+
+
+            <div class="top-blurb" style="display: flex; gap: 50px; padding-top: 20px;">
+                <div style="flex: 1;">
+                    <img style="width: 150px; height: auto;" src="/assets/images/RokuTV_logo_purple1.png"
+                        alt="RokuTV Logo">
+                </div>
+                <div style="flex: 3;">
+                    <p>
+                        This Python script allows you to control your Roku TV completely by voice through keywords.
+                        The program waits for the obvious commands "pause", "play", "left", etc. so you don't have
+                        struggle with
+                        the different UIs of different streaming services. Through language interpretation and your home
+                        wifi network,
+                        the program sends commands to the Roku API.
+                    </p>
+                    <br>
+
+                </div>
+            </div>
+            <br>
+            <div class="types">
+                <span class="project-type"
+                    onclick="event.stopPropagation(); goTo('https://github.com/dtbutts/roku_voice_remote', true);">•
+                    Source Code</span>
+            </div>
+
+            <br>
+            <br>
+
+            <!-- <h2>Demo</h2>
+            <br>
+            <div class="video" style="text-align: left; box-sizing: border-box; max-width: 100%; padding-left: 5px;">
+                <video controls style="width: 100%; max-width: 800px; padding-bottom: 20px; box-sizing: border-box;">
+                    <source src="/assets/video/pageTurnerDemo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <br>
+            <br> -->
+
+            <h2>Built Using...</h2>
+
+            <div class="technology-grouping">
+                <div class="types">
+                    <span class="technology-type-lang">• Python</span>
+                </div>
+                <div class="types">
+                    <span class="technology-type-framework">• Roku API</span>
+                </div>
+                <div class="types">
+                    <span class="technology-type-framework">• Kaldi Speech Recognition</span>
+                </div>
+                <!-- <div class="types">
+                    <span class="technology-type-field">• Timers</span>
+                </div> -->
+            </div>
+
+            <br>
+            <br>
+
+            <p>
+                This project was a lot of fun to make. I had never worked with language models before this. Being from
+                Wyoming, I generally think of my
+                Western American English as having the newscaster's <span style="font-weight: bold;">"no accent"</span>.
+                After seeing what
+                Kaldi recognized my words as, I no
+                longer think that's true.
             </p>
             <br>
             <p>
-                This Apple Watch app helps an artist have the benefit of
-                seeing a chord progression while not having to look at a tablet, laptop, or sheets of music
-                during
-                their performance. Simply turn your Apple Watch to the inside of your wrist and peek when you
-                need to.
+                I learned the how to install, configure, and develop on top of large existing codebases such as Kaldi.
+                After considerate time following README directions
+                and command line output, I was able to integrate into the speech recognition software.
             </p>
             <br>
+            <p>
+                This also allowed me to refamiliarize with Python as I don't get to use the language regularly. It is
+                very easy to use, but after dealing with other languages, the lack of parenthesis seems wrong.
+            </p>
 
+            <br>
+            <br>
+
+            <h2>What's Coming Next...</h2>
+            <br>
+            <ul>
+                <li>
+                    Continue to explore different voice models and find the one that allows for the easiest pickup for
+                    American accents.
+                    If made available to a wider audience, create a way the user can select their own speech model.
+                </li>
+                <li>
+                    Set this script up to continuously run on a microcontroller with a microphone, always picking up as
+                    you watch tv. Then you would never
+                    have to even start and stop the program.
+                </li>
+                <li>
+                    Currently, Kaldi listens in "chunks," so it is possible that the program stops listening and
+                    processes mid-word.
+                    Need to rework how the program grabs samples and interprets them.
+                </li>
+            </ul>
+
+            <br>
             <br>
             <br>
 
