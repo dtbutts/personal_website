@@ -6,20 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pageTurner</title>
     <link rel="stylesheet" href="/index.css">
-    <script type=module src=/header/header.js></script>
-    <script type=module src="/footer/footer.js"></script>
+    <script type="module" src="/header/header.js"></script>
+    <script type="module" src="/footer/footer.js"></script>
     <script type="module" src="global.js"></script>
     <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 </head>
 
 <body>
+
     <!-- Link in header  -->
     <custom-header></custom-header>
 
-    <section class="content" id="content">
+    <section class="project-content">
 
-        <h1>pageTurner</h1>
+        <div class="column project-column">
+            <h1>pageTurner</h1>
 
+            <div class="top-blurb" style="display: flex; gap: 50px; padding-top: 20px;">
+                <div style="flex: 1;">
+                    <p>
+                        I noticed an issue when my friends and I played music -
+                        we would always be huddled around a laptop looking at chords.
+                    </p>
+                    <br>
+                    <p>
+                        Staring at a screen while playing live music is the opposite of what a crowd wants to see.
+                    </p>
+                    <br>
+                    <p>
+                        This Apple Watch app helps an artist have the benefit of
+                        seeing a chord progression while not having to look at a tablet or music during their
+                        performance. Simply turn your Apple Watch to the inside of your wrist and peek when you
+                        need to.
+                    </p>
+                    <br>
+                    <p>
+                        Sorry - repository is private.
+                    </p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <h2>Built Using...</h2>
+            <p>Swift</p>
+            <p>WatchOS UI Kit</p>
+            <p>Timers</p>
+
+            <br>
+            <div class="video" style="text-align: center; padding: 0 50px; box-sizing: border-box; max-width: 100%;">
+                <video controls style="width: 100%; max-width: 800px; padding-bottom: 20px; box-sizing: border-box;">
+                    <source src="/assets/video/pageTurnerDemo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <br>
+            <br>
+
+        </div>
     </section>
 
     <custom-footer></custom-footer>
