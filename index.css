@@ -524,6 +524,18 @@ p:not(.no-indent) {
     font-size: 1.2em;
 }
 
+.project-content ul {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.project-content li {
+    font-size: 1.2em;
+}
+
 .project-content {
     flex-direction: column;
 }
