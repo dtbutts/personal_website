@@ -11,7 +11,11 @@
 body,
 html {
     height: 100%;
-    font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+    /* font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; */
+    /* font-family: "Courier Prime", monospace; */
+
+    font-family: "iA Writer Mono", monospace;
+
     overscroll-behavior: none;
 }
 
@@ -653,6 +657,7 @@ p:not(.no-indent) {
     .left-column {
         width: 100%;
         height: auto;
+        /* display: none; */
     }
 
     .right-column {
