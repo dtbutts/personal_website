@@ -2,15 +2,20 @@
     background: linear-gradient(to right, var(--primaryThird), var(--accentSecond));
     color: var(--lightText);
     padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 60px;
     z-index: 1000;
+}
+
+.header-content {
+    max-width: 1570px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-container {
