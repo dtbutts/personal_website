@@ -607,8 +607,18 @@ p:not(.no-indent) {
     letter-spacing: -0.6px
 }
 
+.book-recap-div {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+}
+
 /* If mobile screens */
 @media (max-width: 768px) {
+
+    .book-recap-div {
+        flex-direction: column;
+    }
 
     .technology-grouping {
         display: flex;
