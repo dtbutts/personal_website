@@ -120,7 +120,29 @@ p:not(.no-indent) {
     background-color: #9191db;
 }
 
+.side-button {
+    width: 130px;
+    height: 34px;
+    border: 1px solid var(--primaryThird);
+    border-radius: 8px;
+    transition: all 0.2s;
+    background: white;
+    font-size: 1.0em;
+    margin-top: 8px;
+    color: var(--primaryThird);
+    font-weight: bold;
+}
 
+.side-button:hover {
+    background: var(--accentSecond);
+    color: white;
+    font-size: 1.01em;
+}
+
+.side-button:active {
+    transform: scale(0.98);
+    color: var(--primaryThird);
+}
 
 .right-column {
     /* background-color: yellow; */
