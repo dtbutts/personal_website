@@ -130,7 +130,6 @@ p:not(.no-indent) {
     font-size: 1.0em;
     margin-top: 8px;
     color: var(--primaryThird);
-    font-weight: bold;
 }
 
 .side-button:hover {
@@ -142,6 +141,10 @@ p:not(.no-indent) {
 .side-button:active {
     transform: scale(0.98);
     color: var(--primaryThird);
+}
+
+.site-anchor {
+    color: #0be1ff
 }
 
 .right-column {

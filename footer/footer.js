@@ -18,7 +18,7 @@ class CustomFooter extends HTMLElement {
                 "(June 2024) 87% of developers are using cross-platform frameworks for mobile app development",
                 "The weirder you are, the more unique you are, the more competitive and interesting you are",
                 "Noah Cyrus > Miley Cyrus",
-                "The App Store (2021) generated $85.1B while Google Play generated only $47.9B across more apps - develop for the app store first",
+                "The App Store (2021) generated $85.1B while Google Play generated only $47.9B across more apps",
                 "Justice for Peanut 🐿️",
                 "Strive to work like Gail Lewis",
             ];
