@@ -5,6 +5,8 @@
     width: 100%;
     background: linear-gradient(to right, var(--accentSecond), var(--primaryThird));
     color: white;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
 
 .footer-top {
@@ -53,11 +55,11 @@
     margin-left: 10px;
 }
 
-.ticker-tape-container {
+/* .ticker-tape-container {
     overflow-x: hidden;
     display: flex;
-}
-
+} */
+/* 
 .ticker-tape {
     display: flex;
     align-items: center;
@@ -72,7 +74,7 @@
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-direction: normal;
-}
+} */
 
 @keyframes marquee {
     0% {
@@ -85,13 +87,12 @@
     }
 }
 
-.ticker-tape {
+/* .ticker-tape {
     animation-name: marquee;
-    /* Adjust this when it you add sentences!!!!! */
     animation-duration: 250s;
     animation-timing-function: linear;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-direction: normal;
-}
+} */
