@@ -11,21 +11,16 @@
 }
 
 .header-content {
-    max-width: 1570px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
     flex-shrink: 0;
-}
-
-.logo-container {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .logo {
@@ -37,19 +32,32 @@
     transform: scale(1.03);
 }
 
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    color: var(--primaryFirst);
+    transform: scale(1.03);
+}
+
 .social-icons {
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    gap: 20px;
 }
 
 .image-item {
     display: inline-flex;
     width: 26px;
     height: 26px;
-    margin-left: 10px;
-    margin-right: 5px;
-    transition: transform 0.3s ease;
 }
 
 .image-item:hover {
@@ -66,7 +74,6 @@
     -webkit-mask-position: center;
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
-    transition: background-color 0.3s ease;
 }
 
 .image-item:hover .svg-mask {
@@ -88,34 +95,72 @@
     -webkit-mask: url('/assets/images/Instagram_Glyph_White.svg') no-repeat center / contain;
 }
 
-/*
-.header-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
-}
-*/
-
-/* .menu-item {
-    margin-left: 20px;
-    font-size: 18px;
-    transition: transform 0.15s ease, color 0.15s ease;
-} */
-
-/* .menu-link {
-    text-decoration: none;
-    color: inherit;
+.hamburger {
+    display: none;
+    font-size: 28px;
     cursor: pointer;
-    transition: color 0.3s ease;
-} */
+    color: var(--lightText);
+    user-select: none;
+    margin-left: auto;
+}
 
-/* .menu-item:hover {
-    transform: scale(1.01);
-} */
+/* Base style for mobile-social-links — hidden on desktop */
+.mobile-social-links {
+    display: none;
+}
 
-/* .menu-link:hover {
-    color: var(--primaryFirst);
-} */
+/* Mobile layout */
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to right, var(--primaryThird), var(--accentSecond));
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        display: none;
+        flex: unset;
+        justify-content: flex-start;
+        z-index: 1100;
+        align-items: center;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .mobile-social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mobile-social-links a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0 4px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.4;
+        transition: none;
+        width: fit-content;
+    }
+
+    .mobile-social-links a:hover {
+        color: white;
+        text-decoration: none;
+    }
+}

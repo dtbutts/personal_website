@@ -82,19 +82,7 @@ p:not(.no-indent) {
     padding: 20px;
 }
 
-.left-column {
-    /* background-color: purple; */
-    width: 20%;
-    position: sticky;
-    top: 60px;
-    height: calc(100vh - 80px);
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+
 
 
 .custom-link {
@@ -143,8 +131,8 @@ p:not(.no-indent) {
 }
 
 .right-column {
-    /* background-color: yellow; */
     width: 80%;
+    margin: 0 auto;
     overflow-y: auto;
     padding-bottom: 20px;
     overflow-x: hidden;
@@ -684,18 +672,10 @@ p:not(.no-indent) {
         flex-direction: column;
     }
 
-    .left-column {
-        display: none;
-    }
-
     .right-column {
         width: 100%;
         overflow-y: visible;
         max-height: none;
-    }
-
-    .monkey-photo {
-        display: none;
     }
 
     .custom-date {

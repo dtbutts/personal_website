@@ -40,23 +40,6 @@
     <br>
 
     <section class="content" id="content">
-        <div class="column left-column">
-            <div class="monkey-photo">
-                <div>
-                    <img src="/assets/images/construction_monkey.png" width="auto" height="170">
-                </div>
-            </div>
-            <button class="side-button" onclick="event.preventDefault(); scrollToSection('projects');">Projects</button>
-            <button class="side-button"
-                onclick="event.preventDefault(); scrollToSection('experience');">Experience</button>
-            <button class="side-button"
-                onclick="event.preventDefault(); scrollToSection('education');">Education</button>
-            <button class="side-button" onclick="event.preventDefault(); scrollToSection('about');">About Me</button>
-        </div>
-
-
-
-
         <div class="column right-column">
             <h1>Hi, my name is Dawson.</h1>
 
@@ -751,6 +734,14 @@
 
             </section>
 
+            <div class="monkey-photo">
+                <div>
+                    <img src="/assets/images/construction_monkey.png" width="auto" height="170"
+                        style="display: block; margin: 0 auto; margin-bottom: 50px;">
+                </div>
+            </div>
+
+
             <!-- <img style="width: 100%; padding-bottom: 50px;" src="assets/images/hexcode2.png"> -->
         </div>
     </section>
@@ -759,6 +750,26 @@
     <custom-footer></custom-footer>
 
     <!-- <div id="glow"></div> -->
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const headerOffset = 80;
+            if (window.location.hash) {
+                const sectionId = window.location.hash.substring(1);
+                const sectionElement = document.getElementById(sectionId);
+                if (sectionElement) {
+                    setTimeout(() => {
+                        const sectionPosition = sectionElement.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+                        window.scrollTo({
+                            top: sectionPosition,
+                            behavior: 'smooth'
+                        });
+                    }, 50);
+                }
+            }
+        });
+    </script>
+
 </body>
 
 </html>
