@@ -26,14 +26,15 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
-    padding-left: 5px;
+    font-size: 22px;
 }
 
 
 h1:not(.no-underline),
 h2:not(.no-underline),
-h3:not(.no-underline) {
+h3:not(.no-underline),
+h4:not(.no-underline),
+h5:not(.no-underline) {
 
     display: inline-block;
     border-bottom: 2px solid black;
@@ -99,31 +100,12 @@ p:not(.no-indent) {
     background-color: #9191db;
 }
 
-.side-button {
-    width: 130px;
-    height: 34px;
-    border: 1px solid var(--primaryThird);
-    border-radius: 8px;
-    transition: all 0.2s;
-    background: white;
-    font-size: 1.0em;
-    margin-top: 8px;
-    color: var(--primaryThird);
-}
-
-.side-button:hover {
-    background: var(--accentSecond);
-    color: white;
-    font-size: 1.01em;
-}
-
-.side-button:active {
-    transform: scale(0.98);
-    color: var(--primaryThird);
-}
-
 .site-anchor {
-    color: #0be1ff
+    color: #6418e7;
+    padding-left: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: inline-block;
 }
 
 .right-column {
@@ -238,39 +220,56 @@ p:not(.no-indent) {
     overflow: hidden;
 }
 
+.location {
+    margin-bottom: 15px !important;
+    color: #666;
+    margin-left: 20px;
+}
+
 .experience-column-1 {
     display: flex;
     flex-direction: column;
-    border-radius: 20px 20px 20px 20px;
-    background-color: rgb(43, 42, 42);
-    border: none;
-    color: white;
+    border-radius: 12px;
+    background-color: white;
     padding: 20px;
-    box-shadow: 4px 0 15px var(--myPurple);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    color: black;
+}
+
+.work-list {
+    display: block !important;
+    /* undo flex */
+    padding-left: 1.5rem;
+    gap: 0 !important;
+    /* remove gap */
+}
+
+.work-list li:not(:last-child) {
+    margin-bottom: 0.75rem;
+    /* or whatever spacing you want */
+}
+
+.work-list li {
+    margin: 0;
+    padding: 0;
+    line-height: 1.0;
+}
+
+.job-title {
+    margin-top: 15px;
+    margin-bottom: 20px !important;
+    margin-left: 10px;
 }
 
 .work-description {
     position: relative;
     padding-left: 30px;
-    font-size: 16px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.work-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background-image: url('/assets/images/doubleArrow.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 10px;
+    /* font-size: 16px; */
 }
 
 .inline-highlight {
-    color: var(--accentThird);
+    color: #7c3aed;
     font-weight: bold;
 }
 
@@ -497,7 +496,7 @@ p:not(.no-indent) {
 
 .project-description {
     margin: 0;
-    color: var(--text-secondary, #666);
+    color: #666;
     font-size: 1rem;
     line-height: 1.5rem;
 }
@@ -526,7 +525,6 @@ p:not(.no-indent) {
     transform: translateY(-1px);
     border-color: rgba(168, 85, 247, 0.4);
 }
-
 
 /* If mobile screens */
 @media (max-width: 768px) {
@@ -631,7 +629,6 @@ p:not(.no-indent) {
     .experience-column .experience-column-1::before {
         content: attr(data-date-range);
         display: block;
-        font-size: 14px;
         font-style: italic;
         color: #fff;
         text-align: center;
