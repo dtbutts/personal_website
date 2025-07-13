@@ -442,12 +442,15 @@ p:not(.no-indent) {
     grid-template-columns: 1fr 2fr;
     gap: 0 5%;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 12px;
     overflow: hidden;
-    padding: 1rem;
+    padding: 2rem;
     align-items: start;
     transition: box-shadow 0.3s ease;
-    background: rgba(0, 0, 0, 0.05);
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+
 }
 
 .project-summary:hover {
