@@ -78,122 +78,53 @@
             <section class="projects" id="projects">
                 <h2>Some things I've built...</h2>
 
-                <div style="padding-left: 10px;">
+                <div class="projects-list">
 
-
-                    <!-- Page Turner Watch app -->
-                    <article class="article-wrapper" onclick="goTo('/projects/pageTurner.html');">
-                        <div class="rounded-lg container-project">
-                            <img class="project-pic" src="assets/images/pageTurnerMain.png">
+                    <div class="project-summary stack-s" onclick="goTo('/projects/pageTurner.html');" role="button"
+                        tabindex="0">
+                        <div class="project-thumbnail">
+                            <img src="assets/images/pageTurnerMain.png" alt="PageTurner app screenshot" />
                         </div>
-                        <div class="project-info">
-                            <div class="flex-pr">
-                                <div class="project-title text-nowrap">PageTurner</div>
-                                <div class="project-hover">
-                                    <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="2em"
-                                        height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
-                                        viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
-                                        <line y2="12" x2="19" y1="12" x1="5"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-
-                        </div>
-                    </article>
-
-                    <br>
-                    <br>
-
-                    <article class="article-wrapper" onclick="goTo('/projects/rokuTv.html');">
-                        <div class="rounded-lg container-project">
-                            <img class="project-pic" src="assets/images/RokuTV_logo_purple1.png">
-                        </div>
-                        <div class="project-info">
-                            <div class="flex-pr">
-                                <div class="project-title text-nowrap">Roku TV Voice Control</div>
-                                <div class="project-hover">
-                                    <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="2em"
-                                        height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
-                                        viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
-                                        <line y2="12" x2="19" y1="12" x1="5"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="types">
-                                <!-- <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);"
-                                class="project-type"></span> -->
-                                <span class="project-type"
-                                    onclick="event.stopPropagation(); goTo('https://github.com/dtbutts/roku_voice_remote', true);">•
-                                    Source Code</span>
+                        <div class="stack-xs">
+                            <h2 class="project-title">PageTurner</h2>
+                            <p class="project-description">A watch app to aid musicians with chord progressions.
+                            </p>
+                            <div class="project-keywords">
+                                <span class="keyword">Swift</span>
+                                <span class="keyword">WatchOS</span>
+                                <span class="keyword">iOS</span>
+                                <span class="keyword">Core Data</span>
+                                <span class="keyword">UIKit</span>
                             </div>
                         </div>
-                    </article>
+                    </div>
 
-                    <br>
-                    <br>
-
-                    <!-- Adding the current website someone is on is tacky -->
-
-                    <!-- <article class="article-wrapper" onclick="testPrint()">
-                        <div class="rounded-lg container-project">
-                            <img class="project-pic" src="assets/images/bandGroup.JPG">
+                    <div class="project-summary stack-s" onclick="goTo('/projects/rokuTv.html');" role="button"
+                        tabindex="0">
+                        <div class="project-thumbnail">
+                            <img src="assets/images/RokuTV_logo_purple1.png" alt="Roku app picture" />
                         </div>
-                        <div class="project-info">
-                            <div class="flex-pr">
-                                <div class="project-title text-nowrap">This Website!</div>
-                                <div class="project-hover">
-                                    <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="2em"
-                                        height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
-                                        viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
-                                        <line y2="12" x2="19" y1="12" x1="5"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="types">
-                                <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);"
-                                    class="project-type"></span>
-                                <span class="project-type">• Source Code</span>
-                            </div>
+                        <div class="stack-xs">
+                            <h2 class="project-title">Roku TV Voice Control</h2>
+                            <p class="project-description">Control your Roku TV completely hands-free by using your
+                                voice instead of the remote.</p>
                         </div>
-                    </article> 
+                    </div>
 
-                    <br>
-                    <br>
-                    -->
-
-                    <article class="article-wrapper" onclick="goTo('/projects/quIT.html');">
-                        <div class="rounded-lg container-project">
-                            <img class="project-pic" src="assets/images/quitItApp.png">
+                    <div class="project-summary stack-s" onclick="goTo('/projects/quIT.html');" role="button"
+                        tabindex="0">
+                        <div class="project-thumbnail">
+                            <img src="assets/images/quitItApp.png" alt="QuIT app picture" />
                         </div>
-                        <div class="project-info">
-                            <div class="flex-pr">
-                                <div class="project-title text-nowrap">QuIT</div>
-                                <div class="project-hover">
-                                    <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="2em"
-                                        height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
-                                        viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
-                                        <line y2="12" x2="19" y1="12" x1="5"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="types">
-                                <!-- <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);"
-                                class="project-type"></span> -->
-                                <span class="project-type"
-                                    onclick="event.stopPropagation(); goTo('https://github.com/dtbutts/quIT_android_mobile', true);">•
-                                    Source Code</span>
-                            </div>
+                        <div class="stack-xs">
+                            <h2 class="project-title">QuIT</h2>
+                            <p class="project-description">Mobile app designed to help users quit their addictions
+                                through feedback, encouragement, community, and analytics.</p>
                         </div>
-                    </article>
-
-                    <br>
-                    <br>
+                    </div>
 
                 </div>
+
 
             </section>
             <section class="experience" id="experience">
