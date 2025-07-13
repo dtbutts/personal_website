@@ -526,6 +526,52 @@ p:not(.no-indent) {
     border-color: rgba(168, 85, 247, 0.4);
 }
 
+.uni-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: 140px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    flex: 1;
+    text-align: left;
+    min-width: 150px;
+    max-width: 270px;
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 7px;
+    transition: box-shadow 0.3s ease;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 16px 16px 16px 12px;
+}
+
+.stat-label {
+    font-size: small !important;
+    margin: 0;
+    color: #666;
+}
+
+.stat-value-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.stat-value {
+    font-size: 26px !important;
+    color: black;
+    text-align: center;
+    margin: 0;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
 /* If mobile screens */
 @media (max-width: 768px) {
 
@@ -565,13 +611,12 @@ p:not(.no-indent) {
 
     .uni-stats {
         flex-direction: column;
-        height: auto;
-        padding-bottom: 400px;
         align-items: center;
+        height: auto;
+        margin-bottom: 40px;
     }
 
-    /* Adjust the child divs to take full width and stack vertically */
-    .uni-stats>div {
+    .stat-card {
         flex-basis: auto;
         width: 100%;
         margin-bottom: 20px;
