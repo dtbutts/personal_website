@@ -11,6 +11,8 @@
 }
 
 .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     position: relative;
