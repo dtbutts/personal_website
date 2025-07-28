@@ -17,6 +17,10 @@ window.goTo = goTo;
 window.testPrint = testPrint;
 
 
+/*
+
+    CODE FOR PROFILE PICTURES SLIDES 
+
 // cycle GIF images 
 const images = [
     'assets/images/prof_1.jpg',
@@ -43,3 +47,5 @@ function changeImage() {
 if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
     setInterval(changeImage, 500);
 }
+
+*/
