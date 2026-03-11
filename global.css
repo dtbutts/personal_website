@@ -1,10 +1,31 @@
 :root {
+
+    /* Color Pallete - Orange  */
+    --pumpkin-spice: #ff6d00ff;
+    --harvest-orange: #ff7900ff;
+    --amber-glow: #ff9e00ff;
+
+
     /* main colors */
-    --menuItemHover: #40daf9;
+    --menuItemHover: var(--pumpkin-spice);
     --headerFooterBarColor: #303030fe;
+
+    --projectKeywordTextColor: white;
+    --projectKeywordBorderColor: black;
+    --projectKeywordFillColor: rgba(0, 0, 0, 0.632);
+
+    /* --projectKeywordHoverColor: var(--lavender-purple); */
+
+    --inlineTextHighlight: var(--pumpkin-spice);
+    --siteAnchorColor: var(--harvest-orange);
+
+    --sourceCodeButtonTextColor: black;
+    --sourceCodeButtonFillColor: var(--amber-glow);
+    --sourceCodeButtonHoverFillColor: rgba(255, 157, 0, 0.706);
 
     /* Text colors */
     --lightText: #ebebeb;
+    --jobLocationTextColor: #666;
 
     /* basics */
     --white: #ffffff;

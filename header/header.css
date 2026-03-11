@@ -102,7 +102,7 @@
 }
 
 .image-item:hover .svg-mask {
-    background-color: #40daf9;
+    background-color: var(--menuItemHover);
 }
 
 .mail-icon {
