@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>roku TV</title>
+    <title>Roku TV</title>
     <link rel="stylesheet" href="/index.css">
     <script type=module src=/header/header.js></script>
     <script type="module" src="/global.js"></script>
@@ -27,13 +27,6 @@
 
 
             <div style="padding-top: 20px;"></div>
-
-            <p>
-                As any good lazy slob knows, the worst part of my yearly GoT binge is having to reach for the remote to
-                skip the intro.
-                I tried to fix that issue by cutting out the button press.
-                <br>
-
 
             <div class="top-blurb" style="display: flex; gap: 50px; padding-top: 20px;">
                 <div style="flex: 1;">
@@ -76,7 +69,7 @@
             <br>
             <br> -->
 
-            <h2>Built Using...</h2>
+            <h2>Built Using</h2>
 
             <div class="technology-grouping">
                 <div class="types">
@@ -88,52 +81,37 @@
                 <div class="types">
                     <span class="technology-type-framework">• Kaldi Speech Recognition</span>
                 </div>
-                <!-- <div class="types">
-                    <span class="technology-type-field">• Timers</span>
-                </div> -->
             </div>
 
             <br>
             <br>
-
+            <h2>Notes</h2>
             <p>
-                This project was a lot of fun to make. I had never worked with language models before this. Being from
-                Wyoming, I generally think of my
-                Western American English as having the newscaster's <span style="font-weight: bold;">"no accent"</span>.
-                After seeing what
-                Kaldi recognized my words as, I no
-                longer think that's true.
-            </p>
-            <br>
-            <p>
-                I learned the how to install, configure, and develop on top of large existing codebases such as Kaldi.
+                I learned the how to install, configure, and develop on top of large, existing projects such as Kaldi.
                 After considerate time following README directions
                 and command line output, I was able to integrate into the speech recognition software.
             </p>
             <br>
             <p>
-                This also allowed me to refamiliarize with Python as I don't get to use the language regularly. It is
-                very easy to use, but after dealing with other languages, the lack of parenthesis seems wrong.
+                Note that it appears there are multiple build issues within the Kaldi project now.
             </p>
 
             <br>
             <br>
 
-            <h2>What's Coming Next...</h2>
-            <br>
+            <h2>Future Updates</h2>
             <ul>
                 <li>
                     Continue to explore different voice models and find the one that allows for the easiest pickup for
-                    American accents.
+                    different accents.
                     If made available to a wider audience, create a way the user can select their own speech model.
                 </li>
                 <li>
                     Set this script up to continuously run on a microcontroller with a microphone, always picking up as
-                    you watch tv. Then you would never
-                    have to even start and stop the program.
+                    you watch tv.
                 </li>
                 <li>
-                    Currently, Kaldi listens in "chunks," so it is possible that the program stops listening and
+                    Currently, program listens in "chunks," so it is possible that the program stops listening and
                     processes mid-word.
                     Need to rework how the program grabs samples and interprets them.
                 </li>
