@@ -1,25 +1,14 @@
 :root {
     /* main colors */
-    --primaryFirst: #40daf9;
-    --primarySecond: #29A1D8;
-    --primaryThird: #4b8fc7fe;
-
-    /* accent colors */
-    --accentFirst: #a943d5;
-    --accentSecond: #ce78cb;
-    --accentThird: #dfa2db;
-    --myPurple: #8c84c9;
+    --menuItemHover: #40daf9;
+    --headerFooterBarColor: #303030fe;
 
     /* Text colors */
     --lightText: #ebebeb;
-    --mediumText: #c3bec5;
-    --darkText: #aca092;
 
     /* basics */
     --white: #ffffff;
     --black: #000000;
-    --backgroundOne: #303031d9;
-    --backgroundTwo: #18181a;
 
     /* font sizes */
     --tinyFont: 11px;

@@ -121,24 +121,6 @@ p:not(.no-indent) {
     /* Hides the scrollbar */
 }
 
-
-.discordButton {
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    width: 200px;
-    padding: 15px 15px;
-    align-self: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    color: white;
-    background-color: var(--accentSecond);
-    margin-top: 60px;
-    cursor: pointer;
-    transition: background-color 0.5s ease, transform 0.5s ease;
-}
-
 .content h2 {
     margin-bottom: 20px;
 }

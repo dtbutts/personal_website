@@ -1,5 +1,5 @@
 .header {
-    background: linear-gradient(to right, var(--primaryThird), var(--accentSecond));
+    background: var(--headerFooterBarColor);
     color: var(--lightText);
     padding: 10px 20px;
     position: fixed;
@@ -54,7 +54,7 @@
 }
 
 .menu-item:hover {
-    color: var(--primaryFirst);
+    color: var(--menuItemHover);
     transform: scale(1.03);
 }
 
@@ -148,7 +148,7 @@
         top: 50px;
         left: 0;
         right: 0;
-        background: linear-gradient(to right, var(--primaryThird), var(--accentSecond));
+        background: var(--headerFooterBarColor);
         flex-direction: column;
         gap: 20px;
         padding: 20px;
