@@ -319,7 +319,8 @@ p:not(.no-indent) {
     padding-right: 70px;
 }
 
-.project-content {
+.project-content,
+.misc-content {
     display: flex;
     max-width: 1100px;
     margin: 0 auto;
@@ -330,15 +331,18 @@ p:not(.no-indent) {
     position: relative;
 }
 
-.project-content h2 {
+.project-content h2,
+.misc-content h2 {
     margin-bottom: 20px;
 }
 
-.project-content p {
+.project-content p,
+.misc-content p {
     font-size: 1.2em;
 }
 
-.project-content ul {
+.project-content ul,
+.misc-content ul {
     padding-left: 40px;
     display: flex;
     flex-direction: column;
@@ -346,16 +350,19 @@ p:not(.no-indent) {
 
 }
 
-.project-content li {
+.project-content li,
+.misc-content li {
     font-size: 1.2em;
 }
 
-.project-content {
+.project-content,
+.misc-content {
     flex-direction: column;
 }
 
 
-.project-column {
+.project-column,
+.misc-column {
     /* background-color: yellow; */
     width: 100%;
     overflow-y: auto;
@@ -364,7 +371,8 @@ p:not(.no-indent) {
     padding-top: 20px;
 }
 
-.project-column::-webkit-scrollbar {
+.project-column::-webkit-scrollbar,
+.misc-column::-webkit-scrollbar {
     display: none;
     /* Hides the scrollbar */
 }
