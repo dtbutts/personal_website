@@ -14,7 +14,18 @@ class CustomHeader extends HTMLElement {
     addEventListenerToLogo() {
         const logo = this.querySelector('.logo');
         if (logo) {
-            logo.addEventListener('click', () => this.scrollToSectionHeader('landing-image'));
+            logo.addEventListener('click', () => {
+                const currentPage = window.location.pathname;
+
+                if (currentPage === '/index.html' || currentPage === '/') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    window.location.href = '/';
+                }
+            });
         }
     }
 
