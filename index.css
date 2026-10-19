@@ -584,6 +584,29 @@ p:not(.no-indent) {
     display: block;
 }
 
+.gtm-link {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    /* Background color */
+    color: #222222;
+    /* Text color */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.gtm-link:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
+}
+
+.gtm-link h2 {
+    color: var(--inlineTextHighlight);
+    /* Title color */
+    margin-top: 0;
+}
+
 /* If mobile screens */
 @media (max-width: 768px) {
     .favorites-grid {
