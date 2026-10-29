@@ -607,6 +607,14 @@ p:not(.no-indent) {
     margin-top: 0;
 }
 
+.presentation-iframe {
+    width: 100%;
+    aspect-ratio: 960 / 569;
+    height: auto;
+    display: block;
+    border: none;
+}
+
 /* If mobile screens */
 @media (max-width: 768px) {
     .favorites-grid {
